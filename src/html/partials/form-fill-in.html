@@ -10,13 +10,27 @@ nombre completo puesto imagen de perfil
 <!--botón-añadir-imagen-->
 <!--snipet de imagen-->
 email teléfono linkedin github comparte
-<fieldset>
-  <legend>rellena</legend>
-
-  <label for="fullName">nombre completo</label>
-  <input type="text" id="fullName" name="fullName" />
-  <label for="jobPosition">puesto</label>
-  <input type="text" id="add-profileImage" name="add-profileImage" />
-  <label for="add-profileImage">añadir imagen</label>
-  <input type="button" id="add-profileImage" name="add-profileImage" />
-</fieldset>
+<form action="/signup" method="post" id="form" class="form" autocomplete="off">
+  <fieldset>
+    <button class="collapsible-button">
+      <i class="far fa-keyboard"></i> rellena >
+    </button>
+    <label class="label" for="fullName">nombre completo</label>
+    <input class="input" type="text" id="fullName" name="fullName" />
+    <label class="label" for="jobPosition">puesto</label>
+    <input
+      class="input"
+      type="text"
+      id="add-profileImage"
+      name="add-profileImage"
+    />
+    <label class="label" for="add-profileImage">imagen de perfil</label>
+    <input
+      class="button"
+      type="file"
+      name="add-profileImage"
+      id="add-profileImage"
+      value="añadir imagen"
+    />
+  </fieldset>
+</form>
