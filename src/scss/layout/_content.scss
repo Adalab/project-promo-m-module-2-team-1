@@ -1,0 +1,42 @@
+.share-section {
+  padding-left: 23px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.share-icon {
+  color: #e17334;
+}
+
+.h2 {
+  text-transform: uppercase;
+  color: #54585a;
+  font-family: $main-font;
+  size: 18px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.share-button {
+  width: 199px;
+  height: 60px;
+  border-radius: 12px;
+  background-color: #e17334;
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-style: none;
+}
+
+.address-card-icon {
+  size: 22px;
+  background-color: #e17334;
+}
