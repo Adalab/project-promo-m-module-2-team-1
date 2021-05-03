@@ -1,0 +1,6 @@
+.container {
+  padding: 30px 20px;
+  @include tablet {
+    padding: 30px 40px;
+  }
+}
