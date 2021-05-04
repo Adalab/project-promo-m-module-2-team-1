@@ -3,35 +3,53 @@
   width: 100vw;
   height: 458px;
 }
+
 .share-section {
-  padding: 21px 20px 61px 20px;
-  width: 100vw;
+  padding: 10px 20px 30px 20px;
+
+  @media all and (min-width: 768px) {
+    padding-right: 30px;
+    padding-left: 40px;
+  }
 }
 
 .share-row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   padding-bottom: 30px;
-}
 
-.share-icon {
-  color: #e17334;
-  size: 18px;
-  margin-right: 12px;
-}
+  @media all and (min-width: 768px) {
+    padding-bottom: 33px;
+  }
 
-.h2 {
-  text-transform: uppercase;
-  color: #54585a;
-  font-family: $main-font;
-  font-size: 18px;
-  margin-right: 137px;
-  font-weight: 600;
-}
+  .share-icon {
+    color: $dull-orange;
+    size: 18px;
+    margin-right: 12px;
 
-.arrow-icon {
-  size: 18px;
-  color: #54585a;
+    @media all and (min-width: 768px) {
+      margin-right: 12.5px;
+    }
+  }
+
+  .h2 {
+    text-transform: uppercase;
+    color: $title-section-color;
+    font-family: $main-font;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 137px;
+
+    @media all and (min-width: 768px) {
+      margin-right: 186px;
+    }
+  }
+
+  .arrow-icon {
+    size: 18px;
+    color: $title-section-color;
+  }
 }
 
 .button-container {
@@ -39,22 +57,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 43px;
-  border-bottom: #d8d8d8 1px solid;
+  padding-bottom: 30px;
+  border-bottom: $grey-stroke 1px solid;
 }
 
 .share-button {
   width: 199px;
   height: 50px;
   border-radius: 12px;
-  background-color: #e17334;
-  color: #ffffff;
+  background-color: $dull-orange;
+  border-style: none;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  color: $font-button-color;
+  text-transform: uppercase;
   font-size: 18px;
   font-family: $main-font;
   font-weight: 600;
-  text-transform: uppercase;
-  border-style: none;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
 }
 
 .address-card-icon {
@@ -73,17 +91,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: #d8d8d8 1px solid;
+  border-bottom: $grey-stroke 1px solid;
+  padding-bottom: 30px;
 }
 
 .text-set-up {
   font-size: 18px;
   font-weight: 600;
-  color: #54585a;
+  color: $title-section-color;
   font-family: $main-font;
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 32px; //hasta el button
+  padding-bottom: 5px;
+}
+
+.link-set-up {
+  font-size: 12px;
+  font-family: $main-font;
+  color: $dull-orange;
+  font-weight: 400;
+  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .twitter-button {
@@ -92,14 +121,14 @@
   border-radius: 3px;
   background-color: #00a0f5;
   border-style: none;
-  color: #ffffff;
+  color: $font-button-color;
   font-size: 14px;
-  font-weight: 100;
   line-height: 20px;
   box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.32);
-  margin-bottom: 30px;
+  vertical-align: middle;
 }
 
 .twitter-icon {
-  margin-right: 9.5px;
+  size: 18px;
+  vertical-align: middle;
 }
