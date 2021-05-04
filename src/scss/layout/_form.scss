@@ -1,0 +1,83 @@
+.collapsible-button {
+  width: 280px;
+  height: auto;
+  background-color: $background-landing;
+  cursor: pointer;
+  padding: 18px;
+  border-bottom: 1px solid $grey-stroke;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+}
+
+//----nuevos-estilos----//
+.form {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.form-selections {
+  @include tablet {
+    width: 50%;
+  }
+}
+.header-form {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &__title {
+    display: flex;
+    flex-direction: row;
+  }
+  &__name {
+    font-size: 18px;
+    font-family: $main-font;
+    text-transform: uppercase;
+    color: $title-section-color;
+  }
+}
+.fa-keyboard {
+  font-size: 18px;
+  color: $contrast-color;
+  padding-right: 10px;
+}
+.fa-chevron-up {
+  font-size: 18px;
+  color: $title-section-color;
+}
+.label {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $main-font;
+  color: $labelNameColor;
+  display: block;
+  margin: 0.4375rem 0 0.8125rem;
+}
+.input {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $main-font;
+  color: $placeholder-text;
+  display: block;
+  height: 30px;
+  width: 280px;
+  border: solid 1px $border-fields-color;
+  box-sizing: border-box;
+  padding-left: 0.9375rem;
+}
+.button {
+  width: 140px;
+  height: 30px;
+  appearance: none;
+  background-color: $contrast-color;
+}
+.endsection {
+  border-bottom: 1px solid $grey-stroke;
+  width: 100%;
+  padding-top: 30px;
+}

@@ -1,30 +1,37 @@
-<form action="/signup" method="post">
-  <input type="text" name="fullName" />
-  <input type="text" name="jobPosition" />
-  <input type="button" name="add-profileImage" />
-</form>
-page__header <br />
-diseña rellena
-<!----FORMULARIO---->
-nombre completo puesto imagen de perfil
-<!--botón-añadir-imagen-->
-<!--snipet de imagen-->
-email teléfono linkedin github comparte
-<form action="/signup" method="post" id="form" class="form" autocomplete="off">
-  <fieldset>
-    <button class="collapsible-button">
-      <i class="far fa-keyboard"></i> rellena >
-    </button>
-    <label class="label" for="fullName">nombre completo</label>
-    <input class="input" type="text" id="fullName" name="fullName" />
-    <label class="label" for="jobPosition">puesto</label>
+<section class="form container">
+  <div class="form-selections">
+    <section class="header-form">
+      <div class="header-form__title">
+        <i class="far fa-keyboard"></i>
+        <h2 class="header-form__name">rellena</h2>
+      </div>
+      <i class="fas fa-chevron-up"></i>
+    </section>
+  </div>
+  <form
+    action="/signup"
+    method="post"
+    id="form"
+    class="form"
+    autocomplete="off"
+  >
+    <label class="label" for="fullName">Nombre completo</label>
     <input
       class="input"
       type="text"
-      id="add-profileImage"
-      name="add-profileImage"
+      id="fullName"
+      name="fullName"
+      placeholder="Ej: Sally Jill"
     />
-    <label class="label" for="add-profileImage">imagen de perfil</label>
+    <label class="label" for="jobPosition">Puesto</label>
+    <input
+      class="input"
+      type="text"
+      id="jobPosition"
+      name="jobPosition"
+      placeholder="Ej: Front-end unicorn"
+    />
+    <label class="label" for="add-profileImage">Imagen de perfil</label>
     <input
       class="button"
       type="file"
@@ -32,5 +39,35 @@ email teléfono linkedin github comparte
       id="add-profileImage"
       value="añadir imagen"
     />
-  </fieldset>
-</form>
+    <!--snipet de imagen-->
+    <label class="label" for="email">Email</label>
+    <input class="input" type="email" name="email" placeholder="Ej: sally-hill@gmail.com" />
+    <label class="label" for="mobile"
+        >Teléfono
+        <input
+        class="input"
+          type="tel"
+          name="mobile"
+          pattern=".{9}"
+          title="El número debe contener 9 dígitos"
+          placeholder="Ej: 555-55-55-55"
+        />
+        <label class="label" for="linkedin">Linkedin</label>
+    <input
+      class="input"
+      type="text"
+      id="linkedin"
+      name="linkedin"
+      placeholder="Ej: linkedin.com/in/sally.hill"
+    />
+    <label class="label" for="github">Github</label>
+    <input
+      class="input"
+      type="text"
+      id="github"
+      name="github"
+      placeholder="Ej: @sally-hill"
+    />
+  </form>
+  <div class="endsection"></div>
+</section>
