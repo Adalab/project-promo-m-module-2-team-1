@@ -1,0 +1,105 @@
+.content {
+  background-color: $background-landing;
+  width: 100vw;
+  height: 458px;
+}
+.share-section {
+  padding: 21px 20px 61px 20px;
+  width: 100vw;
+}
+
+.share-row {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+}
+
+.share-icon {
+  color: #e17334;
+  size: 18px;
+  margin-right: 12px;
+}
+
+.h2 {
+  text-transform: uppercase;
+  color: #54585a;
+  font-family: $main-font;
+  font-size: 18px;
+  margin-right: 137px;
+  font-weight: 600;
+}
+
+.arrow-icon {
+  size: 18px;
+  color: #54585a;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 43px;
+  border-bottom: #d8d8d8 1px solid;
+}
+
+.share-button {
+  width: 199px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: #e17334;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: $main-font;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-style: none;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+}
+
+.address-card-icon {
+  size: 22px;
+  margin-right: 9px;
+}
+
+/*OPCIÓN 2*/
+/*.share-button2 {
+  display: none;
+  background-color: #d5d5d5;
+}*/
+
+.set-up-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: #d8d8d8 1px solid;
+}
+
+.text-set-up {
+  font-size: 18px;
+  font-weight: 600;
+  color: #54585a;
+  font-family: $main-font;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 32px; //hasta el button
+}
+
+.twitter-button {
+  width: 181px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: #00a0f5;
+  border-style: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.32);
+  margin-bottom: 30px;
+}
+
+.twitter-icon {
+  margin-right: 9.5px;
+}
