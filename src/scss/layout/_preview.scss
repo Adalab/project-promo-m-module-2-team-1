@@ -8,6 +8,9 @@
     align-items: center;
     justify-content: center;
 }
+.fa-trash-alt{
+    margin-right: 8px;
+}
 .page__preview--button{
     width: 75px;
     height: 30px;
@@ -26,7 +29,7 @@
 
 .page__preview--card{
     width: 240px;
-    height: 320px;
+    height: auto;
     background-color: white;
     text-align: left;
 }
@@ -63,8 +66,11 @@
     height: 32px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: flex-start;
+    // align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 .rrss-item{
     width: 32px;
@@ -72,7 +78,16 @@
     text-align: center;
     border-radius: 50%;
     border: solid 2px #a2deaf;
+    margin-right: 10px;
 }
 .icon{
+    width: 30px;
+    height: 30px;
     color: #114e4e;
+}
+.fa-twitter,.fa-envelope,
+.fa-linkedin-in,.fa-github-alt{
+    width: 30px;
+    height: 30px;
+    transform: translate(0,20%);
 }
