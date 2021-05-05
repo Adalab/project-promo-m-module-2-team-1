@@ -1,3 +1,7 @@
+.section-fill {
+  border-style: none;
+}
+
 .collapsible-button {
   width: 280px;
   height: auto;
@@ -24,23 +28,7 @@
     width: 50%;
   }
 }
-.header-form {
-  width: 100%;
-  height: 70px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  &__title {
-    display: flex;
-    flex-direction: row;
-  }
-  &__name {
-    font-size: 18px;
-    font-family: $main-font;
-    text-transform: uppercase;
-    color: $title-section-color;
-  }
-}
+
 .fa-keyboard {
   font-size: 18px;
   color: $contrast-color;

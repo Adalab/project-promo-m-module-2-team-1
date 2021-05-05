@@ -9,12 +9,15 @@
   justify-content: center;
 
   @include tablet {
-    width: 50%;
+    margin: 20px 40px 20px 30px;
+    max-width: 329px;
   }
 }
+
 .fa-trash-alt {
   margin-right: 8px;
 }
+
 .page__preview--button {
   width: 75px;
   height: 30px;

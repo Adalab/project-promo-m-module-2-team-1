@@ -1,49 +1,5 @@
-.share-section {
-  padding: 10px 20px 30px 20px;
-
-  @media all and (min-width: 768px) {
-    padding-right: 30px;
-    padding-left: 40px;
-  }
-}
-
-.share-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-bottom: 30px;
-
-  @media all and (min-width: 768px) {
-    padding-bottom: 33px;
-  }
-
-  .share-icon {
-    color: $dull-orange;
-    size: 18px;
-    margin-right: 12px;
-
-    @media all and (min-width: 768px) {
-      margin-right: 12.5px;
-    }
-  }
-
-  .share-title {
-    text-transform: uppercase;
-    color: $title-section-color;
-    font-family: $main-font;
-    font-size: 18px;
-    font-weight: 600;
-    margin-right: 137px;
-
-    @media all and (min-width: 768px) {
-      margin-right: 186px;
-    }
-  }
-
-  .arrow-icon {
-    size: 18px;
-    color: $title-section-color;
-  }
+.section-share {
+  border-style: none;
 }
 
 .button-container {
@@ -59,7 +15,7 @@
   width: 199px;
   height: 50px;
   border-radius: 12px;
-  background-color: $dull-orange;
+  background-color: $contrast-color;
   border-style: none;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
   color: $font-button-color;
@@ -102,7 +58,7 @@
 .link-set-up {
   font-size: 12px;
   font-family: $main-font;
-  color: $dull-orange;
+  color: $contrast-color;
   font-weight: 400;
   padding-bottom: 10px;
   text-align: center;
