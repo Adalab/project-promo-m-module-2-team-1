@@ -1,3 +1,18 @@
+.wrapper {
+  width: 100%;
+  background: linear-gradient(to bottom, #f5f5f5, #ffffff);
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    flex-direction: row-reverse;
+    margin: 0 auto;
+  }
+}
+.refillable {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .container {
   padding: 30px 20px;
   @include tablet {
