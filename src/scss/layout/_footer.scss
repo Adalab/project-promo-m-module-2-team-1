@@ -1,16 +1,22 @@
 .footer {
   width: 100%;
-  height: 110px;
+  //height: 110px;
+  //el borde es solo para ver lo que ocupa
+  border: solid 3px aqua;
   font-family: $main-font;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   &__small {
-    text-align: center;
     line-height: 5px;
+    margin-top: 18px;
   }
   &__logo {
-    text-align: center;
+    width: 103px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 }
