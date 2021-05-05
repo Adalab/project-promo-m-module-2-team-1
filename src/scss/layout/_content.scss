@@ -1,9 +1,3 @@
-.content {
-  background-color: $background-landing;
-  width: 100vw;
-  height: 458px;
-}
-
 .share-section {
   padding: 10px 20px 30px 20px;
 
@@ -33,7 +27,7 @@
     }
   }
 
-  .h2 {
+  .share-title {
     text-transform: uppercase;
     color: $title-section-color;
     font-family: $main-font;
