@@ -36,6 +36,12 @@
   font-size: 12px;
   line-height: 20px;
   font-family: $main-font;
+
+  &:hover{
+    color: white;
+    transform: scale(1.1);
+    border: solid 2px #54585a;
+  }
 }
 
 .page__preview--card {
@@ -94,6 +100,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover{
+    transform: scale(1.2);
+    border: solid 2px #114e4e;
+  }
 }
 .rrss-link{
   text-decoration: none;
@@ -101,6 +112,10 @@
   height: 32px;
   color: #114e4e;
   transform: translate(25%,25%);
+
+  &:hover{
+    color: #a2deaf;
+  }
 }
 .fa-mobile-alt{
   transform: translate(32%,25%);
