@@ -11,12 +11,19 @@
     width: 250px;
     height: 63px;
     margin: 10px 35px 50px 35px;
+    @include tablet {
+      width: 419px;
+      height: 105px;
+    }
   }
   &__title {
     color: $contrast-color;
     font-size: 19px;
     font-family: $title-font;
     font-weight: bold;
+    @include tablet {
+      font-size: 24px;
+    }
   }
   &__subtitle {
     font-size: 12.8px;
@@ -26,6 +33,10 @@
     color: $labelNameColor;
     margin-top: 5px;
     line-height: 1.2;
+    @include tablet {
+      font-size: 16px;
+      width: 278px;
+    }
   }
   &__wrapper {
     width: 268px;
@@ -42,6 +53,11 @@
     margin-top: 20px;
     //padding: 15px 20px 9.8px 20px;
     margin-bottom: 38px;
+    @include tablet {
+      width: 325px;
+      height: 86px;
+      //margin-bottom: 200px;
+    }
   }
   &__icon-design {
     color: $contrast-color;
@@ -66,6 +82,11 @@
   }
   &__icon--icon {
     font-size: 18px;
+    @include tablet {
+      width: 32px;
+      height: 29px;
+      margin-left: 15px;
+    }
   }
   &__link {
     border-radius: 21px;
@@ -81,6 +102,9 @@
     font-size: 15px;
     font-family: $main-font;
     color: $title-section-color;
+    @include tablet {
+      font-size: 16px;
+    }
   }
   &__link-text {
     color: white;
