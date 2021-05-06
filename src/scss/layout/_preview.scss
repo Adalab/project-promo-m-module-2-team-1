@@ -85,17 +85,21 @@
 .rrss-item {
   width: 32px;
   height: 32px;
-  text-align: center;
   border-radius: 50%;
   border: solid 2px #a2deaf;
   margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.fa-mobile-alt,
-.fa-envelope,
-.fa-linkedin-in,
-.fa-github-alt {
-  width: 30px;
-  height: 30px;
-  transform: translate(0, 20%);
+.rrss-link{
+  text-decoration: none;
+  width: 32px;
+  height: 32px;
   color: #114e4e;
+  transform: translate(25%,25%);
 }
+.fa-mobile-alt{
+  transform: translate(32%,25%);
+}
+
