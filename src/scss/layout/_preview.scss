@@ -36,11 +36,13 @@
   font-size: 12px;
   line-height: 20px;
   font-family: $main-font;
+  
 
   &:hover{
     color: white;
     transform: scale(1.1);
     border: solid 2px #54585a;
+    cursor: pointer;
   }
 }
 
