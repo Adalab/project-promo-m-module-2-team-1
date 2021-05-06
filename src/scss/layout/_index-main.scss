@@ -1,7 +1,7 @@
 .landing {
   background-color: $background-landing;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,7 @@
   &__logo {
     width: 250px;
     height: 63px;
-    margin: 94px 35px 35px 35px;
+    margin: 10px 35px 50px 35px;
   }
   &__title {
     color: $contrast-color;
@@ -19,34 +19,53 @@
     font-weight: bold;
   }
   &__subtitle {
-    font-size: 12px;
+    font-size: 12.8px;
     width: 200px;
     height: 38.4px;
     text-align: center;
     color: $labelNameColor;
+    margin-top: 5px;
+    line-height: 1.2;
   }
   &__wrapper {
     width: 268px;
     height: 74px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     font-family: $main-font;
     font-size: 12.8px;
     border-radius: 4px;
     border: solid 1.6px #e17334;
+    margin-top: 20px;
+    //padding: 15px 20px 9.8px 20px;
     margin-bottom: 38px;
   }
   &__icon-design {
     color: $contrast-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 20px;
   }
   &__icon-fill {
     color: $contrast-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 20px;
   }
   &__icon-share {
     color: $contrast-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 20px;
+  }
+  &__icon--icon {
+    font-size: 18px;
   }
   &__link {
     border-radius: 21px;
@@ -58,8 +77,16 @@
     text-decoration: none;
     display: flex;
   }
+  &__icon--text {
+    font-size: 15px;
+    font-family: $main-font;
+    color: $title-section-color;
+  }
   &__link-text {
     color: white;
     margin: auto;
   }
+}
+.central-column {
+  padding: 0px 35px;
 }
