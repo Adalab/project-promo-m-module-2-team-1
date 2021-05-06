@@ -13,6 +13,9 @@
     margin: 20px 40px 20px 30px;
     max-width: 329px;
   }
+  @include tablet {
+    max-width: 585px;
+  }
 }
 
 .fa-trash-alt {
