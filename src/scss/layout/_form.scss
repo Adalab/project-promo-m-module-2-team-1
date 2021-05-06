@@ -3,19 +3,6 @@
   border-bottom: 1px solid $grey-stroke;
 }
 
-.collapsible-button {
-  width: 280px;
-  height: auto;
-  background-color: $background-landing;
-  cursor: pointer;
-  padding: 18px;
-  border-bottom: 1px solid $grey-stroke;
-  text-align: left;
-  outline: none;
-  font-size: 18px;
-}
-
-//----nuevos-estilos----//
 .form {
   width: 100%;
   height: auto;
@@ -64,9 +51,4 @@
   height: 30px;
   appearance: none;
   background-color: $contrast-color;
-}
-.endsection {
-  border-bottom: 1px solid $grey-stroke;
-  width: 100%;
-  padding-top: 30px;
 }
