@@ -1,6 +1,6 @@
 .section-fill {
   border-style: none;
-  border-bottom: 1px solid $grey-stroke;
+  border-bottom: rem(1) solid $grey-stroke;
 }
 
 .form {
@@ -17,34 +17,34 @@
   }
 }
 .fa-keyboard {
-  font-size: 18px;
+  font-size: rem(18);
   color: $contrast-color;
-  padding-right: 10px;
+  padding-right: rem(10);
 }
 .fa-chevron-up {
-  font-size: 18px;
+  font-size: rem(18);
   color: $title-section-color;
 }
 .label {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: rem(14);
+  line-height: rem(20);
   font-family: $main-font;
   color: $labelNameColor;
   display: block;
-  margin: 0 0 7px 0;
+  margin: 0 0 rem(7) 0;
 }
 .input {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: rem(14);
+  line-height: rem(20);
   font-family: $main-font;
   color: $title-section-color;
   display: block;
-  height: 30px;
+  height: rem(30);
   width: 100%;
-  border: solid 1px $border-fields-color;
+  border: solid rem(1) $border-fields-color;
   box-sizing: border-box;
-  padding: 3px 0 7px 9px;
-  margin-bottom: 20px;
+  padding: rem(3) 0 rem(7) rem(9);
+  margin-bottom: rem(20);
   &::placeholder {
     color: $placeholder-text;
   }
@@ -53,34 +53,34 @@
   display: flex;
 }
 .button {
-  width: 140px;
-  height: 30px;
+  width: rem(140);
+  height: rem(30);
   appearance: none;
   background-color: $contrast-color;
   text-align: center;
   font-family: $main-font;
-  font-size: 14px;
-  padding: 8px 0;
+  font-size: rem(14);
+  padding: rem(8) 0;
   color: #fff;
-  border-radius: 4px;
+  border-radius: rem(4);
   border: none;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-  margin-bottom: 20px;
+  box-shadow: 0 0 rem(4) 0 rgba(0, 0, 0, 0.32);
+  margin-bottom: rem(20);
   &:hover {
     background-color: fade-in($color: $labelNameColor, $amount: 0);
     transition: background-color ease 1s, box-shadow ease 0.5s;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 rem(6) 0 rgba(0, 0, 0, 0.5);
   }
 }
 .upload__file {
   display: none;
 }
 .snipet {
-  width: 30px;
-  height: 30px;
-  border: 1px solid $border-fields-color;
+  width: rem(30);
+  height: rem(30);
+  border: rem(1) solid $border-fields-color;
   display: inline-block;
-  margin-left: 20px;
+  margin-left: rem(20);
   background-size: contain;
   background-repeat: no-repeat;
 }
