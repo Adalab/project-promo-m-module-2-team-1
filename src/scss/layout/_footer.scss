@@ -6,6 +6,13 @@
   justify-content: center;
   align-items: center;
   padding: 18px 61px 20px;
+  border-top: solid 1px $grey-stroke;
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 768px;
+    height: 60px;
+  }
 
   &__small {
     font-family: $main-font;
@@ -14,6 +21,11 @@
     margin-bottom: 12px;
     width: 100vw;
     text-align: center;
+    @include tablet {
+      width: 50%;
+      text-align: left;
+      padding-top: 15px;
+    }
   }
 
   &__logo {
