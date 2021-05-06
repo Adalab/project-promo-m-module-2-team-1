@@ -8,58 +8,66 @@
       <i class="fas fa-chevron-up"></i>
     </section>
   </div> -->
-<label class="label" for="fullName">Nombre completo</label>
+  <label class="label" for="fullName">Nombre completo</label>
+  <input
+    class="input"
+    type="text"
+    id="fullName"
+    name="fullName"
+    placeholder="Ej: Sally Jill"
+  />
+  <label class="label" for="jobPosition">Puesto</label>
+  <input
+    class="input"
+    type="text"
+    id="jobPosition"
+    name="jobPosition"
+    placeholder="Ej: Front-end unicorn"
+  />
+  <span class="label">Imagen de perfil</span>
+  <div class="form__image">
+    <label class="button" for="add-profileImage">Añadir imagen</label>
     <input
-      class="input"
-      type="text"
-      id="fullName"
-      name="fullName"
-      placeholder="Ej: Sally Jill"
-    />
-    <label class="label" for="jobPosition">Puesto</label>
-    <input
-      class="input"
-      type="text"
-      id="jobPosition"
-      name="jobPosition"
-      placeholder="Ej: Front-end unicorn"
-    />
-    <!--HACER BOTON-->
-    <label class="label" for="add-profileImage">Imagen de perfil</label>
-    <input
-      class="button"
+      class="upload__file"
       type="file"
-      name="add-profileImage"
       id="add-profileImage"
-      value="añadir imagen"
+      name="add-profileImage"
+      value=""
     />
-    <!--snipet de imagen-->
-    <label class="label" for="email">Email</label>
-    <input class="input" type="email" name="email" placeholder="Ej: sally-hill@gmail.com" />
-    <label class="label" for="mobile"
-        >Teléfono
-        <input
-        class="input"
-          type="tel"
-          name="mobile"
-          pattern=".{9}"
-          title="El número debe contener 9 dígitos"
-          placeholder="Ej: 555-55-55-55"
-        />
-        <label class="label" for="linkedin">Linkedin</label>
-    <input
-      class="input"
-      type="text"
-      id="linkedin"
-      name="linkedin"
-      placeholder="Ej: linkedin.com/in/sally.hill"
-    />
-    <label class="label" for="github">Github</label>
-    <input
-      class="input"
-      type="text"
-      id="github"
-      name="github"
-      placeholder="Ej: @sally-hill"
-    />
+    <span class="snipet"></span>
+  </div>
+  <label class="label" for="email">Email</label>
+  <input
+    class="input"
+    type="email"
+    id="email"
+    name="email"
+    placeholder="Ej: sally-hill@gmail.com"
+  />
+  <label class="label" for="phone">Teléfono</label>
+  <input
+    class="input"
+    type="tel"
+    id="phone"
+    name="phone"
+    pattern=".{9}"
+    title="El número debe contener 9 dígitos"
+    placeholder="Ej: 555-55-55-55"
+  />
+  <label class="label" for="linkedin">Linkedin</label>
+  <input
+    class="input"
+    type="text"
+    id="linkedin"
+    name="linkedin"
+    placeholder="Ej: linkedin.com/in/sally.hill"
+  />
+  <label class="label" for="github">Github</label>
+  <input
+    class="input"
+    type="text"
+    id="github"
+    name="github"
+    placeholder="Ej: @sally-hill"
+  />
 </fieldset>
