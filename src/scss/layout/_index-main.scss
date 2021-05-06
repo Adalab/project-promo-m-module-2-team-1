@@ -113,4 +113,7 @@
 }
 .central-column {
   padding: 0px 35px;
+  @include tablet {
+    padding: 0px 175px;
+  }
 }
