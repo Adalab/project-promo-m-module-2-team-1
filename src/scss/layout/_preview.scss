@@ -7,6 +7,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 40px 0;
 
   @include tablet {
     margin: 20px 40px 20px 30px;
@@ -40,7 +41,9 @@
   background-color: white;
   text-align: left;
 }
-
+.preview__car--title-wrapper{
+  border-left: 5px solid #114e4e;
+}
 .preview__card--title {
   margin: 21px 20px 4px;
   width: 206px;
@@ -87,11 +90,6 @@
   border: solid 2px #a2deaf;
   margin-right: 10px;
 }
-.icon {
-  width: 30px;
-  height: 30px;
-  color: #114e4e;
-}
 .fa-mobile-alt,
 .fa-envelope,
 .fa-linkedin-in,
@@ -99,4 +97,5 @@
   width: 30px;
   height: 30px;
   transform: translate(0, 20%);
+  color: #114e4e;
 }
