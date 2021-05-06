@@ -15,8 +15,10 @@
 
 .fa-object-ungroup {
   color: #e17334;
-  font-size: 18px;
-  padding-right: 10px;
+  font-size: rem(
+    18
+  ); /* Aquí estoy aplicando la funció que se llama rem, entre paréntesis le pongo mi tamaño de px*/
+  padding-right: rem(10);
 }
 
 .selection {
