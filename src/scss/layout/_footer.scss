@@ -10,12 +10,8 @@
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
-    width: 768px;
-    height: 60px;
-  }
-  @include desktop {
     width: 100%;
-    //height: 60px;
+    height: 60px;
   }
 
   &__small {
