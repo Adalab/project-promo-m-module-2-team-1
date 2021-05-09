@@ -1,4 +1,5 @@
 .section-design {
+  margin-top: -20px; //Sube la sección para reducir margen
   border-style: none;
   border-bottom: 1px solid $grey-stroke;
 }
@@ -61,4 +62,8 @@
   &__mix3 {
     background-color: #a0c0cf;
   }
+}
+
+.js-hidden {
+  display: none;
 }
