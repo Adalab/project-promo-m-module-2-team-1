@@ -47,17 +47,18 @@
   justify-content: center;
   align-items: center;
   border-bottom: $grey-stroke 1px solid;
-  padding-bottom: 30px;
+  //padding-bottom: 30px;
 }
 
 .text-set-up {
+  display: none;
   font-size: 18px;
   font-weight: 600;
   color: $title-section-color;
   font-family: $main-font;
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 32px;
 }
 
 .link-set-up {
@@ -71,6 +72,7 @@
 }
 
 .twitter-button {
+  display: none;
   width: 181px;
   height: 30px;
   border-radius: 3px;
@@ -86,4 +88,5 @@
 .twitter-icon {
   size: 18px;
   vertical-align: middle;
+  padding-right: 9.5px;
 }
