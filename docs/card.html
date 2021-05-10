@@ -67,151 +67,96 @@
         </div>
       </section>
 
-      <form
-        class="refillable js-form"
-        action="/signup"
-        method="post"
-        id="form"
-        class="form"
-        autocomplete="off"
-      >
-        <div class="collapsable__header container">
-          <i class="far fa-object-ungroup header-icon"></i>
-          <h2 class="collapsable__header--title">Diseña</h2>
-          <i class="fas fa-chevron-up"></i>
-        </div>
-
-        <fieldset class="section-design container">
-          <div class="selection">
-            <h3 class="selection__title">Colores</h3>
-            <div class="selection__options">
-              <label for="coloroption1" class="selection__options--palette">
-                <input id="coloroption1" type="radio" value="coldcolors" name="coloroption" class="selection__options--input" />
-                <div class="palette palette__cold1"></div>
-                <div class="palette palette__cold2"></div>
-                <div class="palette palette__cold3"></div>
-              </label>
-              <label for="coloroption2" class="selection__options--palette">
-                <input id="coloroption2" type="radio" value="hotcolors" name="coloroption" class="selection__options--input" />
-                <div class="palette palette__hot1"></div>
-                <div class="palette palette__hot2"></div>
-                <div class="palette palette__hot3"></div>
-              </label>
-              <label for="coloroption3" class="selection__options--palette">
-                <input id="coloroption3" type="radio" value="complementary" name="coloroption" class="selection__options--input" />
-                <div class="palette palette__mix1"></div>
-                <div class="palette palette__mix2"></div>
-                <div class="palette palette__mix3"></div>
-              </label>
+      <form class="refillable js-form " action="/signup" method="post" id="form" class="form" autocomplete="off">
+        <div class="js-hidden">
+          <div class="collapsable__header container js-collapsible">
+            <i class="far fa-object-ungroup header-icon"></i>
+            <h2 class="collapsable__header--title">Diseña</h2>
+            <i class="fas fa-chevron-up hidden__icon"></i>
+          </div>
+          <fieldset class="section-design container">
+            <div class="selection hidden-content">
+              <h3 class="selection__title">Colores</h3>
+              <div class="selection__options">
+                <label for="coloroption1" class="selection__options--palette">
+                  <input id="coloroption1" type="radio" value="coldcolors" name="coloroption" class="selection__options--input" checked />
+                  <div class="palette palette__cold1"></div>
+                  <div class="palette palette__cold2"></div>
+                  <div class="palette palette__cold3"></div>
+                </label>
+                <label for="coloroption2" class="selection__options--palette">
+                  <input id="coloroption2" type="radio" value="hotcolors" name="coloroption" class="selection__options--input" />
+                  <div class="palette palette__hot1"></div>
+                  <div class="palette palette__hot2"></div>
+                  <div class="palette palette__hot3"></div>
+                </label>
+                <label for="coloroption3" class="selection__options--palette">
+                  <input id="coloroption3" type="radio" value="complementary" name="coloroption" class="selection__options--input" />
+                  <div class="palette palette__mix1"></div>
+                  <div class="palette palette__mix2"></div>
+                  <div class="palette palette__mix3"></div>
+                </label>
+              </div>
             </div>
-          </div>
-        </fieldset>
-
-        <div class="collapsable__header container">
-          <i class="far fa-keyboard header-icon"></i>
-          <h2 class="collapsable__header--title">Rellena</h2>
-          <i class="fas fa-chevron-up"></i>
+          </fieldset>
         </div>
 
-        <fieldset class="section-fill container">
-          <label class="label" for="fullName">Nombre completo</label>
-          <input
-            class="input js-inputName"
-            type="text"
-            id="fullName"
-            name="fullName"
-            maxlength="30"
-            placeholder="Ej: Sally Jill"
-            required
-          />
-          <label class="label" for="jobPosition">Puesto</label>
-          <input
-            class="input js-inputJob"
-            type="text"
-            id="jobPosition"
-            name="jobPosition"
-            placeholder="Ej: Front-end unicorn"
-            required
-          />
-          <label class="label" for="add-profileImage">Imagen de perfil</label>
-          <div class="form__image">
-            <label class="button" for="add-profileImage">Añadir imagen</label>
-            <input
-              class="upload__file js-inputImg"
-              type="file"
-              id="add-profileImage"
-              name="add-profileImage"
-              value="añadir imagen"
-              required
-            />
-            <div class="snipet"></div>
+        <div class="js-hidden hidden">
+          <div class="collapsable__header container js-collapsible">
+            <i class="far fa-keyboard header-icon"></i>
+            <h2 class="collapsable__header--title">Rellena</h2>
+            <i class="fas fa-chevron-up hidden__icon"></i>
           </div>
-          <label class="label" for="email">Email</label>
-          <input
-            class="input js-inputEmail"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Ej: sally-hill@gmail.com"
-            required
-          />
-          <label class="label" for="phone">Teléfono</label>
-          <input
-            class="input js-inputTel"
-            type="tel"
-            id="phone"
-            name="phone"
-            pattern=".{9}"
-            title="El número debe contener 9 dígitos"
-            placeholder="Ej: 555-55-55-55"
-            required
-          />
-          <label class="label" for="linkedin">Linkedin</label>
-          <input
-            class="input js-inputLinkedin"
-            type="text"
-            id="linkedin"
-            name="linkedin"
-            placeholder="Ej: linkedin.com/in/sally.hill"
-            required
-          />
-          <label class="label" for="github">Github</label>
-          <input
-            class="input js-inputGitHub"
-            type="text"
-            id="github"
-            name="github"
-            placeholder="Ej: @sally-hill"
-            required
-          />
-        </fieldset>
-
-
-        <div class="collapsable__header container">
-          <i class="fas fa-share-alt header-icon"></i>
-          <h2 class="collapsable__header--title">Comparte</h2>
-          <i class="fas fa-chevron-up"></i>
+          <fieldset class="section-fill container">
+            <div class="hidden-content">
+              <label class="label" for="fullName">Nombre completo</label>
+              <input class="input js-inputName" type="text" id="fullName" name="fullName" maxlength="19" placeholder="Ej: Sally Jill" required />
+              <label class="label" for="jobPosition">Puesto</label>
+              <input class="input js-inputJob" type="text" id="jobPosition" name="jobPosition" placeholder="Ej: Front-end unicorn" required maxlength="21" />
+              <label class="label" for="add-profileImage">Imagen de perfil</label>
+              <div class="form__image">
+                <label class="button" for="add-profileImage">Añadir imagen</label>
+                <input class="upload__file js-inputImg" type="file" id="add-profileImage" name="add-profileImage" value="añadir imagen" required />
+                <div class="snipet"></div>
+              </div>
+              <label class="label" for="email">Email</label>
+              <input class="input js-inputEmail" type="email" id="email" name="email" placeholder="Ej: sally-hill@gmail.com" required />
+              <label class="label" for="phone">Teléfono</label>
+              <input class="input js-inputTel" type="tel" id="phone" name="phone" pattern=".{9}" title="El número debe contener 9 dígitos" placeholder="Ej: 555-55-55-55" required />
+              <label class="label" for="linkedin">Linkedin</label>
+              <input class="input js-inputLinkedin" type="text" id="linkedin" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill" required />
+              <label class="label" for="github">Github</label>
+              <input class="input js-inputGitHub" type="text" id="github" name="github" placeholder="Ej: @sally-hill" required />
+            </div>
+          </fieldset>
         </div>
 
-        <fieldset class="section-share container">
-          <div class="button-container">
-            <button class="share-button share-button2">
-              <i class="far fa-address-card address-card-icon"></i>crear tarjeta
-            </button>
+        <div class="js-hidden hidden">
+          <div class="collapsable__header container js-collapsible">
+            <i class="fas fa-share-alt header-icon"></i>
+            <h2 class="collapsable__header--title">Comparte</h2>
+            <i class="fas fa-chevron-up hidden__icon"></i>
           </div>
+          <fieldset class="section-share container">
+            <div class="hidden-content">
+              <div class="button-container">
+                <button class="share-button share-button2">
+                  <i class="far fa-address-card address-card-icon"></i>crear tarjeta
+                </button>
+              </div>
 
-          <div class="set-up-container">
-            <p class="text-set-up">La tarjeta ha sido creada:</p>
+              <div class="set-up-container">
+                <p class="text-set-up">La tarjeta ha sido creada:</p>
 
-            <button type="submit" class="twitter-button">
-              <i class="fab fa-twitter twitter-icon"></i>Compartir en twitter
-            </button>
-          </div>
-        </fieldset>
-
+                <button type="submit" class="twitter-button">
+                  <i class="fab fa-twitter twitter-icon"></i>Compartir en twitter
+                </button>
+              </div>
+            </div>
+          </fieldset>
+        </div>
       </form>
     </main>
-
     <footer class="footer">
       <small class="footer__small"> Awesome profile-cards &copy; 2021 </small>
       <img
