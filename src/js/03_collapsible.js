@@ -8,6 +8,7 @@ for (const headerClick of headerClicks) {
 }
 function handleHeaderClick(event) {
   const hiddenSection = event.currentTarget.closest(".js-hidden");
+  
   const hiddenSections = document.querySelectorAll(".js-hidden");
 
   for (const section of hiddenSections) {

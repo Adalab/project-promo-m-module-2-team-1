@@ -65,5 +65,10 @@
 }
 
 .hidden {
+  .hidden-content{
   display: none;
+  }
+  .hidden__icon {
+    transform: rotate(180deg);
+  }
 }
