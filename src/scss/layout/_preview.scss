@@ -107,9 +107,9 @@
 }
 //----------------------------------------//
 .preview__card--subtitle {
-  margin-left: rem(20);
   margin-bottom: rem(10);
-  width: rem(168);
+  padding: 0 rem(20);
+  width: 100%;
   height: rem(20);
   font-size: rem(16);
   line-height: rem(20);

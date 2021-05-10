@@ -127,18 +127,22 @@ function handlerInfo(event) {
    
     if(input.classList.contains('js-inputName')){
       namePreview.innerHTML = inputValue;
+      formData.name = inputValue;
     }else if(input.classList.contains('js-inputJob')){
       jobPreview.innerHTML = inputValue;
-    }else if(input.classList.contains('js-inputImg')){
-      imgPreview.src = inputValue;
+      formData.job = inputValue;
     }else if(input.classList.contains('js-inputEmail')){
       mailPreview.href += inputValue;
+      formData.email = inputValue;
     }else if(input.classList.contains('js-inputTel')){
       telPreview.href += inputValue;
+      formData.phone = inputValue;
     }else if(input.classList.contains('js-inputLinkedin')){
       linkedinPreview.href += inputValue;
+      formData.linkedin = inputValue;
     }else if(input.classList.contains('.js-inputGitHub')){
       gitHubPreview.href += inputValue;
+      formData.github = inputValue;
     }
   }
   
