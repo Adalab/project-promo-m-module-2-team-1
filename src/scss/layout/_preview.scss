@@ -53,11 +53,25 @@
   background-color: white;
   text-align: left;
 }
-.preview__card--title-wrapper{
+//--------OP-WRAPPER------------------------//
+
+.js-op1__wrapper{
   border-left: 5px solid $dirty-blue;
   height: auto;
 }
-.preview__card--title {
+
+.js-op2__wrapper{
+  border-left: 5px solid #bd1010;;
+  height: auto;
+}
+
+.js-op3__wrapper{
+  border-left: 5px solid #eab052;
+  height: auto;
+}
+//--------OP-NAME---------------------------//
+
+.js-op1__name {
   margin: rem(21) rem(20) rem(4);
   width: 100%;
   height: auto;
@@ -68,6 +82,28 @@
   font-weight: bold;
 }
 
+.js-op2__name {
+  margin: rem(21) rem(20) rem(4);
+  width: 100%;
+  height: auto;
+  font-size: rem(18);
+  line-height: rem(20);
+  color: #420101;
+  font-family: $second-font;
+  font-weight: bold;
+}
+
+.js-op3__name {
+  margin: rem(21) rem(20) rem(4);
+  width: 100%;
+  height: auto;
+  font-size: rem(18);
+  line-height: rem(20);
+  color: #3e5b65;
+  font-family: $second-font;
+  font-weight: bold;
+}
+//----------------------------------------//
 .preview__card--subtitle {
   margin-left: rem(20);
   margin-bottom: rem(10);
@@ -95,7 +131,9 @@
   justify-content: flex-start;
   margin: rem(10) 0 rem(10) rem(20);
 }
-.rrss-item {
+//-------------CIRCLE---------------//
+
+.js-op1__circle {
   width: rem(32);
   height: rem(32);
   border-radius: 50%;
@@ -110,12 +148,62 @@
     border: solid 2px #114e4e;
   }
 }
-.rrss-link{
+.js-op2__circle {
+  width: rem(32);
+  height: rem(32);
+  border-radius: 50%;
+  border: solid 2px #e95626;
+  margin-right: rem(10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover{
+    transform: scale(1.2);
+    border: solid 2px #420101;
+  }
+}
+
+.js-op3__circle {
+  width: rem(32);
+  height: rem(32);
+  border-radius: 50%;
+  border: solid 2px #a0c0cf;
+  margin-right: rem(10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover{
+    transform: scale(1.2);
+    border: solid 2px #3e5b65;
+  }
+}
+
+//-------------ICON---------------//
+
+.js-op1__icon{
   text-decoration: none;
   color: #114e4e;
 
   &:hover{
     color: #a2deaf;
+  }
+}
+.js-op2__icon{
+  text-decoration: none;
+  color: #420101;
+
+  &:hover{
+    color: #e95626;
+  }
+}
+.js-op3__icon{
+  text-decoration: none;
+  color: #3e5b65;
+
+  &:hover{
+    color: #a0c0cf;
   }
 }
 
