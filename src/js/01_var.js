@@ -5,6 +5,7 @@ console.log('>> Ready :)');
 
 //-----FORM-------------------------------------------------
 const form = document.querySelector('.js-form');
+const formData = {};
 
 //------PREVIEW---------------------------------------------
 const namePreview = document.querySelector('.js-namePreview');

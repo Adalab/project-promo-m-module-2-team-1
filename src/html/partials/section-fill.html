@@ -1,72 +1,75 @@
 <fieldset class="section-fill container js-collapsable-header">
-  <label class="label" for="fullName">Nombre completo</label>
-  <input
-    class="input js-inputName"
-    type="text"
-    id="fullName"
-    name="fullName"
-    maxlength="30"
-    placeholder="Ej: Sally Jill"
-    required
-  />
-  <label class="label" for="jobPosition">Puesto</label>
-  <input
-    class="input js-inputJob"
-    type="text"
-    id="jobPosition"
-    name="jobPosition"
-    placeholder="Ej: Front-end unicorn"
-    required
-  />
-  <label class="label" for="add-profileImage">Imagen de perfil</label>
-  <div class="form__image">
-    <label class="button" for="add-profileImage">Añadir imagen</label>
+  <div class="">
+    <label class="label" for="fullName">Nombre completo</label>
     <input
-      class="upload__file js-inputImg"
-      type="file"
-      id="add-profileImage"
-      name="add-profileImage"
-      value="añadir imagen"
+      class="input js-inputName"
+      type="text"
+      id="fullName"
+      name="fullName"
+      maxlength="19"
+      placeholder="Ej: Sally Jill"
       required
     />
-    <div class="snipet"></div>
+    <label class="label" for="jobPosition">Puesto</label>
+    <input
+      class="input js-inputJob"
+      type="text"
+      id="jobPosition"
+      name="jobPosition"
+      placeholder="Ej: Front-end unicorn"
+      required
+      maxlength="21"
+    />
+    <label class="label" for="add-profileImage">Imagen de perfil</label>
+    <div class="form__image">
+      <label class="button" for="add-profileImage">Añadir imagen</label>
+      <input
+        class="upload__file js-inputImg"
+        type="file"
+        id="add-profileImage"
+        name="add-profileImage"
+        value="añadir imagen"
+        required
+      />
+      <div class="snipet"></div>
+    </div>
+    <label class="label" for="email">Email</label>
+    <input
+      class="input js-inputEmail"
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Ej: sally-hill@gmail.com"
+      required
+    />
+    <label class="label" for="phone">Teléfono</label>
+    <input
+      class="input js-inputTel"
+      type="tel"
+      id="phone"
+      name="phone"
+      pattern=".{9}"
+      title="El número debe contener 9 dígitos"
+      placeholder="Ej: 555-55-55-55"
+      required
+    />
+    <label class="label" for="linkedin">Linkedin</label>
+    <input
+      class="input js-inputLinkedin"
+      type="text"
+      id="linkedin"
+      name="linkedin"
+      placeholder="Ej: linkedin.com/in/sally.hill"
+      required
+    />
+    <label class="label" for="github">Github</label>
+    <input
+      class="input js-inputGitHub"
+      type="text"
+      id="github"
+      name="github"
+      placeholder="Ej: @sally-hill"
+      required
+    />
   </div>
-  <label class="label" for="email">Email</label>
-  <input
-    class="input js-inputEmail"
-    type="email"
-    id="email"
-    name="email"
-    placeholder="Ej: sally-hill@gmail.com"
-    required
-  />
-  <label class="label" for="phone">Teléfono</label>
-  <input
-    class="input js-inputTel"
-    type="tel"
-    id="phone"
-    name="phone"
-    pattern=".{9}"
-    title="El número debe contener 9 dígitos"
-    placeholder="Ej: 555-55-55-55"
-    required
-  />
-  <label class="label" for="linkedin">Linkedin</label>
-  <input
-    class="input js-inputLinkedin"
-    type="text"
-    id="linkedin"
-    name="linkedin"
-    placeholder="Ej: linkedin.com/in/sally.hill"
-    required
-  />
-  <label class="label" for="github">Github</label>
-  <input
-    class="input js-inputGitHub"
-    type="text"
-    id="github"
-    name="github"
-    placeholder="Ej: @sally-hill"
-    required
-  />
 </fieldset>

@@ -1,5 +1,8 @@
 .section-share {
   border-style: none;
+  margin-top: -20px; //Sube la sección para reducir margen
+  border-style: none;
+  border-bottom: 1px solid $grey-stroke;
 }
 
 .button-container {
@@ -7,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: $grey-stroke 1px solid;
+  //border-bottom: $grey-stroke 1px solid;
   padding-bottom: 30px;
 }
 
@@ -46,7 +49,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: $grey-stroke 1px solid;
+  //border-bottom: $grey-stroke 1px solid;
   //padding-bottom: 30px;
 }
 
