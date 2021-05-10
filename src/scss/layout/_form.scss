@@ -40,10 +40,10 @@
     color: $placeholder-text;
   }
 }
-.form__image {
+.action {
   display: flex;
 }
-.button {
+.action__upload-btn {
   width: rem(140);
   height: rem(30);
   appearance: none;
@@ -53,6 +53,8 @@
   font-size: rem(14);
   padding: rem(8) 0;
   color: #fff;
+  box-sizing: border-box; //??
+  cursor: pointer;
   border-radius: rem(4);
   border: none;
   box-shadow: 0 1px rem(4) 0 rgba(0, 0, 0, 0.32);
@@ -63,16 +65,16 @@
     box-shadow: 0 0 rem(6) 0 rgba(0, 0, 0, 0.5);
   }
 }
-.upload__file {
+.action__hiddenField {
   display: none;
 }
-.snipet {
+.profile__preview {
   width: rem(30);
   height: rem(30);
   border: rem(1) solid $border-fields-color;
   display: inline-block;
   margin-left: rem(20);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }

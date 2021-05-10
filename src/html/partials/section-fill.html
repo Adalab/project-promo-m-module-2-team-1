@@ -1,37 +1,39 @@
 <fieldset class="section-fill container">
   <div class="hidden-content">
-    <label class="label" for="fullName">Nombre completo</label>
+    <label class="label" for="name">Nombre completo</label>
     <input
       class="input js-inputName"
       type="text"
-      id="fullName"
-      name="fullName"
+      id="name"
+      name="name"
       maxlength="19"
       placeholder="Ej: Sally Jill"
       required
     />
-    <label class="label" for="jobPosition">Puesto</label>
+    <label class="label" for="job">Puesto</label>
     <input
       class="input js-inputJob"
       type="text"
-      id="jobPosition"
-      name="jobPosition"
+      id="job"
+      name="job"
       placeholder="Ej: Front-end unicorn"
       required
       maxlength="21"
     />
-    <label class="label" for="add-profileImage">Imagen de perfil</label>
-    <div class="form__image">
-      <label class="button" for="add-profileImage">Añadir imagen</label>
+    <label class="label" for="photo">Imagen de perfil</label>
+    <div class="action">
+      <label class="action__upload-btn" for="photo">Añadir imagen</label>
+      <!-- js__profile-upload-btn está quitado de la clase que sigue ahora
+      y se ha dejado la que había previamente js-inputImg-->
       <input
-        class="upload__file js-inputImg"
+        class="action__hiddenField js-inputImg"
         type="file"
-        id="add-profileImage"
-        name="add-profileImage"
+        id="photo"
+        name="photo"
         value="añadir imagen"
         required
       />
-      <div class="snipet"></div>
+      <div class="profile__preview js__profile-preview"></div>
     </div>
     <label class="label" for="email">Email</label>
     <input
