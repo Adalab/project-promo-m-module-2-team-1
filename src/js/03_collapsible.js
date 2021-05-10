@@ -1,15 +1,37 @@
 "use strict";
 
+// FUNCIÓN OK ----------------------------------------------------
+
 const headerClick = document.querySelector(".js-collapsible");
 
 const hiddenSection = document.querySelector(".js-hidden");
 
-// PRUEBA 1
+const designSection = document.querySelector(".js-design");
+const shareSection = document.querySelector(".js-share");
 
 const handleHeaderClick = () => {
   hiddenSection.classList.toggle("js-hidden");
 };
 headerClick.addEventListener("click", handleHeaderClick);
+
+//_________________________________________________________________
+
+//____________________________________________________________________________
+// PRUEBA CONDICIONAL
+/*
+const handleHeaderClick = () => {
+  hiddenSection.classList.toggle("js-hidden");
+  
+  if (shareSection.classList === ("js-hidden) {
+    shareSection.classList.remove("js-hidden");
+  } else {
+    shareSection.classList.add("js-hidden");
+  }
+};
+
+headerClick.addEventListener("click", handleHeaderClick);
+
+*/
 
 // PRUEBA 2
 /*
