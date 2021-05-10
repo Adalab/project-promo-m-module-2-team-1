@@ -3,7 +3,10 @@
 
 console.log('>> Ready :)');
 
+//-----FORM-------------------------------------------------
 const form = document.querySelector('.js-form');
+
+//------PREVIEW---------------------------------------------
 const namePreview = document.querySelector('.js-namePreview');
 const jobPreview = document.querySelector('.js-jobPreview');
 const imgPreview = document.querySelector('.js-imgPreview');
@@ -12,31 +15,16 @@ const telPreview = document.querySelector('.js-telPreview');
 const linkedinPreview = document.querySelector('.js-linkedinPreview');
 const gitHubPreview = document.querySelector('.js-gitHubPreview');
 
-
-
-function handlerFill(event) {
-
-  const input = event.target;
-  const inputValue = event.target.value;
- 
-  if(input.classList.contains('js-inputName')){
-    namePreview.innerHTML = inputValue;
-  }else if(input.classList.contains('js-inputJob')){
-    jobPreview.innerHTML = inputValue;
-  }else if(input.classList.contains('js-inputImg')){
-    imgPreview.src = inputValue;
-  }else if(input.classList.contains('js-inputEmail')){
-    mailPreview.href += inputValue;
-  }else if(input.classList.contains('js-inputTel')){
-    telPreview.href += inputValue;
-  }else if(input.classList.contains('js-inputLinkedin')){
-    linkedinPreview.href += inputValue;
-  }else if(input.classList.contains('.js-inputGitHub')){
-    gitHubPreview.href += inputValue;
-  }
-}
-
-
-form.addEventListener('change', handlerFill);
+//------COLORS----------------------------------------------
+const borderPreview = document.querySelector('.js-op1__wrapper');
+const nameColorPreview = document.querySelector('.js-op1__name');
+const circlePreview1 = document.querySelector('.js-op1__circle1');
+const circlePreview2 = document.querySelector('.js-op1__circle2');
+const circlePreview3 = document.querySelector('.js-op1__circle3');
+const circlePreview4 = document.querySelector('.js-op1__circle4');
+const iconPreview1 = document.querySelector('.js-op1__icon1');
+const iconPreview2 = document.querySelector('.js-op1__icon2');
+const iconPreview3 = document.querySelector('.js-op1__icon3');
+const iconPreview4 = document.querySelector('.js-op1__icon4');
 
 

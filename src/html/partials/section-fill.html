@@ -1,13 +1,4 @@
 <fieldset class="section-fill container">
-  <!-- <div class="form-selections">
-    <section class="header-form">
-      <div class="header-form__title">
-        <i class="far fa-keyboard"></i>
-        <h2 class="header-form__name">rellena</h2>
-      </div>
-      <i class="fas fa-chevron-up"></i>
-    </section>
-  </div> -->
   <label class="label" for="fullName">Nombre completo</label>
   <input
     class="input js-inputName"
@@ -27,7 +18,7 @@
     placeholder="Ej: Front-end unicorn"
     required
   />
-  <span class="label">Imagen de perfil</span>
+  <label class="label" for="add-profileImage">Imagen de perfil</label>
   <div class="form__image">
     <label class="button" for="add-profileImage">Añadir imagen</label>
     <input
@@ -35,9 +26,10 @@
       type="file"
       id="add-profileImage"
       name="add-profileImage"
-      value=""
+      value="añadir imagen"
+      required
     />
-    <span class="snipet"></span>
+    <div class="snipet"></div>
   </div>
   <label class="label" for="email">Email</label>
   <input
@@ -66,6 +58,7 @@
     id="linkedin"
     name="linkedin"
     placeholder="Ej: linkedin.com/in/sally.hill"
+    required
   />
   <label class="label" for="github">Github</label>
   <input
@@ -74,5 +67,6 @@
     id="github"
     name="github"
     placeholder="Ej: @sally-hill"
+    required
   />
 </fieldset>
