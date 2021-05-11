@@ -26,8 +26,9 @@
     }
   }
   &__subtitle {
+    font-family: $main-font;
     font-size: 12.8px;
-    width: 200px;
+    width: 250px;
     height: 38.4px;
     text-align: center;
     color: $labelNameColor;
@@ -35,7 +36,7 @@
     line-height: 1.2;
     @include tablet {
       font-size: 16px;
-      width: 278px;
+      width: 300px;
     }
   }
   &__wrapper {
@@ -97,7 +98,7 @@
     appearance: button;
     text-decoration: none;
     display: flex;
-    margin-left: 90px;
+    margin: auto;
   }
   &__icon--text {
     font-size: 15px;
@@ -108,6 +109,7 @@
     }
   }
   &__link-text {
+    font-family: $main-font;
     color: white;
     margin: auto;
   }
