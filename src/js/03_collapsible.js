@@ -1,11 +1,5 @@
 "use strict";
 
-const headerClicks = document.querySelectorAll(".js-collapsible");
-
-// PRUEBA FOR OF
-for (const headerClick of headerClicks) {
-  headerClick.addEventListener("click", handleHeaderClick);
-}
 function handleHeaderClick(event) {
   const hiddenSection = event.currentTarget.closest(".js-hidden");
   
@@ -20,6 +14,11 @@ function handleHeaderClick(event) {
   }
 }
 
+for (const headerClick of headerClicks) {
+  headerClick.addEventListener("click", handleHeaderClick);
+}
+
+
 // PRUEBA 1
 /*
 const handleHeaderClick = () => {
@@ -28,24 +27,4 @@ const handleHeaderClick = () => {
 headerClick.addEventListener("click", handleHeaderClick);
 */
 
-// PRUEBA 2
-/*
-function hiddenPart(event) {
-  hiddenSection.classList.toggle("js-hidden");
-}
-headerClick.addEventListener("click", hiddenPart);
-*/
 
-// PRUEBA 3
-/*
-headerClick.onclick = () => {
-  hiddenSection.classList.toggle("js-hidden");
-};
-*/
-
-// PRUEBA 4
-/*
-headerClick.addEventListener("click", () => {
-  console.log("CLICK");
-});
-*/
