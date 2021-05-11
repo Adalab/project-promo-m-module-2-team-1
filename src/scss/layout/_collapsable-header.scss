@@ -1,6 +1,5 @@
 .collapsable__header {
   width: auto;
-  height: 70px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -27,4 +26,15 @@
 }
 .fa-chevron-up {
   color: $title-section-color;
+}
+
+.hidden {
+  
+  .hidden-content{
+  display: none;
+  }
+
+  .hidden__icon {
+    transform: rotate(180deg);
+  }
 }

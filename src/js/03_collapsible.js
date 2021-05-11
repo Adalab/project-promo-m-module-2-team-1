@@ -1,56 +1,27 @@
 "use strict";
 
-// FUNCIÓN OK ----------------------------------------------------
+function handleHeaderClick(event) {
+  const hiddenSection = event.currentTarget.closest(".js-hidden");
 
-const headerClick = document.querySelector(".js-collapsible");
+  const hiddenSections = document.querySelectorAll(".js-hidden");
 
-const hiddenSection = document.querySelector(".js-hidden");
-
-const designSection = document.querySelector(".js-design");
-const shareSection = document.querySelector(".js-share");
-
-const handleHeaderClick = () => {
-  hiddenSection.classList.toggle("js-hidden");
-};
-headerClick.addEventListener("click", handleHeaderClick);
-
-//_________________________________________________________________
-
-//____________________________________________________________________________
-// PRUEBA CONDICIONAL
-/*
-const handleHeaderClick = () => {
-  hiddenSection.classList.toggle("js-hidden");
-  
-  if (shareSection.classList === ("js-hidden) {
-    shareSection.classList.remove("js-hidden");
-  } else {
-    shareSection.classList.add("js-hidden");
+  for (const section of hiddenSections) {
+    if (hiddenSection === section) {
+      section.classList.toggle("hidden");
+    } else {
+      section.classList.add("hidden");
+    }
   }
-};
-
-headerClick.addEventListener("click", handleHeaderClick);
-
-*/
-
-// PRUEBA 2
-/*
-function hiddenPart(event) {
-  hiddenSection.classList.toggle("js-hidden");
 }
-headerClick.addEventListener("click", hiddenPart);
-*/
 
-// PRUEBA 3
+for (const headerClick of headerClicks) {
+  headerClick.addEventListener("click", handleHeaderClick);
+}
+
+// PRUEBA 1
 /*
-headerClick.onclick = () => {
+const handleHeaderClick = () => {
   hiddenSection.classList.toggle("js-hidden");
 };
-*/
-
-// PRUEBA 4
-/*
-headerClick.addEventListener("click", () => {
-  console.log("CLICK");
-});
+headerClick.addEventListener("click", handleHeaderClick);
 */

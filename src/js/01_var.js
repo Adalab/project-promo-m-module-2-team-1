@@ -29,3 +29,7 @@ const iconPreview3 = document.querySelector('.js-op1__icon3');
 const iconPreview4 = document.querySelector('.js-op1__icon4');
 
 
+
+//------COLLAPSABLES----------------------------------------
+
+const headerClicks = document.querySelectorAll(".js-collapsible");
