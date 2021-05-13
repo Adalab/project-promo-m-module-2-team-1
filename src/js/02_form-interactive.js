@@ -1,8 +1,7 @@
 
 
 function handlerColor(event){
-  
-  const input = event.target;
+
   const inputValue = event.target.value;
 
   if(inputValue === 'coldcolors'){
