@@ -1,8 +1,4 @@
-function handlerFill(){
 
-  handlerColor(event);
-  handlerInfo(event);
-}
 
 function handlerColor(event){
   
@@ -117,35 +113,58 @@ function handlerColor(event){
   }
 }
 
+//PINTAR PREVIEW CADA VEZ QUE HAYA CAMBIO INPUT
 
+function paintPreview(event){
 
+  const inputName = event.target.name;
+  const inputValue = event.target.value;
 
-function handlerInfo(event) {
+  if(inputName === 'name'){
+    namePreview.innerHTML = inputValue;
+  }else if(inputName === 'job'){
+    jobPreview.innerHTML = inputValue;
+  }else if(inputName === 'email'){
+    mailPreview.href += inputValue;
+  }else if(inputName === 'phone'){
+    telPreview.href += inputValue;
+  }else if(inputName === 'linkedin'){
+    linkedinPreview.href += inputValue;
+  }else if(inputName === 'github'){
+    gitHubPreview.href += inputValue;
+  }
+}
 
-    const input = event.target;
+//ALMACENAR EL VALOR DE LOS INPUTS EN UN OBJETO FORMDATA
+
+function handlerFormData(event) {
+
+    const inputName = event.target.name;
     const inputValue = event.target.value;
    
-    if(input.classList.contains('js-inputName')){
-      namePreview.innerHTML = inputValue;
+    if(inputName === 'name'){
       formData.name = inputValue;
-    }else if(input.classList.contains('js-inputJob')){
-      jobPreview.innerHTML = inputValue;
+    }else if(inputName === 'job'){
       formData.job = inputValue;
-    }else if(input.classList.contains('js-inputEmail')){
-      mailPreview.href += inputValue;
+    }else if(inputName === 'email'){
       formData.email = inputValue;
-    }else if(input.classList.contains('js-inputTel')){
-      telPreview.href += inputValue;
+    }else if(inputName === 'phone'){
       formData.phone = inputValue;
-    }else if(input.classList.contains('js-inputLinkedin')){
-      linkedinPreview.href += inputValue;
+    }else if(inputName === 'linkedin'){
       formData.linkedin = inputValue;
-    }else if(input.classList.contains('.js-inputGitHub')){
-      gitHubPreview.href += inputValue;
+    }else if(inputName === 'github'){
       formData.github = inputValue;
     }
+    paintPreview(event);
   }
   
+
+  function handlerFill(){
+
+    handlerColor(event);
+    handlerFormData(event);
+  }
+
   
   form.addEventListener('change', handlerFill);
   
