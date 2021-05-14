@@ -1,33 +1,48 @@
+function handlerColor(){
+  //const inputValue = event.target.value;
 
+  const checkedRadio = document.querySelector('.js-colorOption:checked');
+  const inputValue = checkedRadio.value;
+  console.log(inputValue);
 
-function handlerColor(event){
+  const cardElement = document.querySelector('.page__preview--card')
 
-  const inputValue = event.target.value;
+  borderPreview.classList.remove('js-op1__wrapper', 'js-op2__wrapper', 'js-op3__wrapper');
+  
+  //borderPreview.classList.remove('js-op1__wrapper');
+  nameColorPreview.classList.remove('js-op1__name');
+  circlePreview1.classList.remove('js-op1__circle');
+  circlePreview2.classList.remove('js-op1__circle');
+  circlePreview3.classList.remove('js-op1__circle');
+  circlePreview4.classList.remove('js-op1__circle');
+  iconPreview1.classList.remove('js-op1__icon');
+  iconPreview2.classList.remove('js-op1__icon');
+  iconPreview3.classList.remove('js-op1__icon');
+  iconPreview4.classList.remove('js-op1__icon');
+
+  //borderPreview.classList.remove('js-op2__wrapper');
+  nameColorPreview.classList.remove('js-op2__name');
+  circlePreview1.classList.remove('js-op2__circle');
+  circlePreview2.classList.remove('js-op2__circle');
+  circlePreview3.classList.remove('js-op2__circle');
+  circlePreview4.classList.remove('js-op2__circle');
+  iconPreview1.classList.remove('js-op2__icon');
+  iconPreview2.classList.remove('js-op2__icon');
+  iconPreview3.classList.remove('js-op2__icon');
+  iconPreview4.classList.remove('js-op2__icon');
+
+  //borderPreview.classList.remove('js-op3__wrapper');
+  nameColorPreview.classList.remove('js-op3__name');
+  circlePreview1.classList.remove('js-op3__circle');
+  circlePreview2.classList.remove('js-op3__circle');
+  circlePreview3.classList.remove('js-op3__circle');
+  circlePreview4.classList.remove('js-op3__circle');
+  iconPreview1.classList.remove('js-op3__icon');
+  iconPreview2.classList.remove('js-op3__icon');
+  iconPreview3.classList.remove('js-op3__icon');
+  iconPreview4.classList.remove('js-op3__icon');
 
   if(inputValue === '1'){
-
-    borderPreview.classList.remove('js-op2__wrapper');
-    nameColorPreview.classList.remove('js-op2__name');
-    circlePreview1.classList.remove('js-op2__circle');
-    circlePreview2.classList.remove('js-op2__circle');
-    circlePreview3.classList.remove('js-op2__circle');
-    circlePreview4.classList.remove('js-op2__circle');
-    iconPreview1.classList.remove('js-op2__icon');
-    iconPreview2.classList.remove('js-op2__icon');
-    iconPreview3.classList.remove('js-op2__icon');
-    iconPreview4.classList.remove('js-op2__icon');
-
-    borderPreview.classList.remove('js-op3__wrapper');
-    nameColorPreview.classList.remove('js-op3__name');
-    circlePreview1.classList.remove('js-op3__circle');
-    circlePreview2.classList.remove('js-op3__circle');
-    circlePreview3.classList.remove('js-op3__circle');
-    circlePreview4.classList.remove('js-op3__circle');
-    iconPreview1.classList.remove('js-op3__icon');
-    iconPreview2.classList.remove('js-op3__icon');
-    iconPreview3.classList.remove('js-op3__icon');
-    iconPreview4.classList.remove('js-op3__icon');
-
     borderPreview.classList.add('js-op1__wrapper');
     nameColorPreview.classList.add('js-op1__name');
     circlePreview1.classList.add('js-op1__circle');
@@ -38,31 +53,8 @@ function handlerColor(event){
     iconPreview2.classList.add('js-op1__icon');
     iconPreview3.classList.add('js-op1__icon');
     iconPreview4.classList.add('js-op1__icon');
-
   }else if (inputValue === '2'){
-
-    borderPreview.classList.remove('js-op1__wrapper');
-    nameColorPreview.classList.remove('js-op1__name');
-    circlePreview1.classList.remove('js-op1__circle');
-    circlePreview2.classList.remove('js-op1__circle');
-    circlePreview3.classList.remove('js-op1__circle');
-    circlePreview4.classList.remove('js-op1__circle');
-    iconPreview1.classList.remove('js-op1__icon');
-    iconPreview2.classList.remove('js-op1__icon');
-    iconPreview3.classList.remove('js-op1__icon');
-    iconPreview4.classList.remove('js-op1__icon');
-
-    borderPreview.classList.remove('js-op3__wrapper');
-    nameColorPreview.classList.remove('js-op3__name');
-    circlePreview1.classList.remove('js-op3__circle');
-    circlePreview2.classList.remove('js-op3__circle');
-    circlePreview3.classList.remove('js-op3__circle');
-    circlePreview4.classList.remove('js-op3__circle');
-    iconPreview1.classList.remove('js-op3__icon');
-    iconPreview2.classList.remove('js-op3__icon');
-    iconPreview3.classList.remove('js-op3__icon');
-    iconPreview4.classList.remove('js-op3__icon');
-
+    //cardElement.classList.add('opt1');
     borderPreview.classList.add('js-op2__wrapper');
     nameColorPreview.classList.add('js-op2__name');
     circlePreview1.classList.add('js-op2__circle');
@@ -73,31 +65,7 @@ function handlerColor(event){
     iconPreview2.classList.add('js-op2__icon');
     iconPreview3.classList.add('js-op2__icon');
     iconPreview4.classList.add('js-op2__icon');
-
   }else if (inputValue === '3'){
-
-    borderPreview.classList.remove('js-op1__wrapper');
-    nameColorPreview.classList.remove('js-op1__name');
-    circlePreview1.classList.remove('js-op1__circle');
-    circlePreview2.classList.remove('js-op1__circle');
-    circlePreview3.classList.remove('js-op1__circle');
-    circlePreview4.classList.remove('js-op1__circle');
-    iconPreview1.classList.remove('js-op1__icon');
-    iconPreview2.classList.remove('js-op1__icon');
-    iconPreview3.classList.remove('js-op1__icon');
-    iconPreview4.classList.remove('js-op1__icon');
-
-    borderPreview.classList.remove('js-op2__wrapper');
-    nameColorPreview.classList.remove('js-op2__name');
-    circlePreview1.classList.remove('js-op2__circle');
-    circlePreview2.classList.remove('js-op2__circle');
-    circlePreview3.classList.remove('js-op2__circle');
-    circlePreview4.classList.remove('js-op2__circle');
-    iconPreview1.classList.remove('js-op2__icon');
-    iconPreview2.classList.remove('js-op2__icon');
-    iconPreview3.classList.remove('js-op2__icon');
-    iconPreview4.classList.remove('js-op2__icon');
-
     borderPreview.classList.add('js-op3__wrapper');
     nameColorPreview.classList.add('js-op3__name');
     circlePreview1.classList.add('js-op3__circle');
@@ -156,7 +124,7 @@ function handlerFormData(event) {
     }else if(inputName === 'palette'){
       formData.palette = inputValue;
     }
-    
+    console.log(formData);
     paintPreview(event);
   }
   
@@ -169,6 +137,5 @@ function handlerFormData(event) {
 
   
   form.addEventListener('change', handlerFill);
-  
   
   
