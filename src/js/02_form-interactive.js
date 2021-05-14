@@ -4,7 +4,7 @@ function handlerColor(event){
 
   const inputValue = event.target.value;
 
-  if(inputValue === 'option1'){
+  if(inputValue === '1'){
 
     borderPreview.classList.remove('js-op2__wrapper');
     nameColorPreview.classList.remove('js-op2__name');
@@ -39,7 +39,7 @@ function handlerColor(event){
     iconPreview3.classList.add('js-op1__icon');
     iconPreview4.classList.add('js-op1__icon');
 
-  }else if (inputValue === 'option2'){
+  }else if (inputValue === '2'){
 
     borderPreview.classList.remove('js-op1__wrapper');
     nameColorPreview.classList.remove('js-op1__name');
@@ -74,7 +74,7 @@ function handlerColor(event){
     iconPreview3.classList.add('js-op2__icon');
     iconPreview4.classList.add('js-op2__icon');
 
-  }else if (inputValue === 'option3'){
+  }else if (inputValue === '3'){
 
     borderPreview.classList.remove('js-op1__wrapper');
     nameColorPreview.classList.remove('js-op1__name');
