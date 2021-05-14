@@ -46,3 +46,6 @@ const inputPhone = document.querySelector('.js-inputPhone');
 const  inputEmail= document.querySelector('.js-inputEmail');
 const  inputGitHub= document.querySelector('.js-inputGitHub');
 const  inputLinkedin= document.querySelector('.js-inputLinkedin');
+const inputColor1 = document.querySelector('.js-colorOption1');
+const inputColor2 = document.querySelector('.js-colorOption2');
+const inputColor3 = document.querySelector('.js-colorOption3');

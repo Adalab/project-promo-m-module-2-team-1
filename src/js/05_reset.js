@@ -7,6 +7,8 @@ function handleReset(){
     formData.phone = '';
     formData.linkedin = '';
     formData.github = '';
+    formData.palette = 'option1';
+    console.log(formData);
         
     namePreview.innerHTML = formData.name;
     jobPreview.innerHTML = formData.job;
@@ -21,6 +23,8 @@ function handleReset(){
     inputEmail.value = '';
     inputGitHub.value = '';
     inputLinkedin.value = '';
+    
+    
 
 }
 
