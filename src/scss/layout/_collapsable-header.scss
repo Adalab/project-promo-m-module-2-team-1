@@ -1,5 +1,6 @@
 .collapsable__header {
   width: auto;
+  padding-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,9 +30,8 @@
 }
 
 .hidden {
-  
-  .hidden-content{
-  display: none;
+  .hidden-content {
+    display: none;
   }
 
   .hidden__icon {
