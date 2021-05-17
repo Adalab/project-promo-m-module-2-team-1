@@ -1,0 +1,71 @@
+
+.opt1{
+    .js-op__wrapper{
+        border-left: 5px solid $dirty-blue;
+    }
+    .js-op__name{
+        color: #114e4e;
+    }
+    .js-op__circle{
+        border: solid 2px #a2deaf;
+        &:hover {
+            border: solid 2px #114e4e;
+          }
+    }
+    .js-op__icon {
+        color: #114e4e;
+      
+        &:hover {
+          color: #a2deaf;
+        }
+      }
+}
+
+
+
+.opt2{
+    .js-op__wrapper{
+        border-left: 5px solid #bd1010;
+    }
+    .js-op__name{
+        color: #420101;
+    }
+    .js-op__circle{
+        border: solid 2px #e95626;
+        &:hover {
+            border: solid 2px #420101;
+          }
+    }
+    .js-op__icon {
+        color: #420101;
+      
+        &:hover {
+          color: #e95626;
+        }
+      }
+      
+}
+
+
+
+.opt3{
+    .js-op__wrapper{
+        border-left: 5px solid #eab052;
+    }
+    .js-op__name{
+        color: #3e5b65;
+    }
+    .js-op__circle{
+        border: solid 2px #a0c0cf;
+        &:hover {
+            border: solid 2px #3e5b65;
+          }
+    }
+    .js-op__icon {
+        color: #3e5b65;
+      
+        &:hover {
+          color: #a0c0cf;
+        }
+      }
+}
