@@ -5,11 +5,12 @@
 }
 .selection {
   width: 100%;
+  padding-top: 20px; // Copiar a Bárbara y María
   max-height: 340px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  margin-bottom: -20px;
+  //margin-bottom: -20px;
   &__title {
     font-family: $main-font;
     font-size: 14px;
@@ -63,6 +64,3 @@
     background-color: #a0c0cf;
   }
 }
-
-
-

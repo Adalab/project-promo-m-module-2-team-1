@@ -2,7 +2,7 @@
 
 function handleHeaderClick(event) {
   const hiddenSection = event.currentTarget.closest(".js-hidden");
-  
+
   const hiddenSections = document.querySelectorAll(".js-hidden");
 
   for (const section of hiddenSections) {
@@ -18,7 +18,6 @@ for (const headerClick of headerClicks) {
   headerClick.addEventListener("click", handleHeaderClick);
 }
 
-
 // PRUEBA 1
 /*
 const handleHeaderClick = () => {
@@ -26,5 +25,3 @@ const handleHeaderClick = () => {
 };
 headerClick.addEventListener("click", handleHeaderClick);
 */
-
-

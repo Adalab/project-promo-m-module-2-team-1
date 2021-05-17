@@ -11,6 +11,11 @@
   display: flex;
   flex-direction: column;
 }
+
+.form-padding {
+  padding-top: 20px;
+}
+
 .form-selections {
   @include tablet {
     width: 50%;
