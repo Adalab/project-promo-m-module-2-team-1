@@ -1,5 +1,4 @@
 function handlerColor(){
-  //const inputValue = event.target.value;
 
   const checkedRadio = document.querySelector('.js-colorOption:checked');
   const inputValue = checkedRadio.value;
@@ -8,40 +7,17 @@ function handlerColor(){
   const cardElement = document.querySelector('.page__preview--card')
 
   borderPreview.classList.remove('js-op1__wrapper', 'js-op2__wrapper', 'js-op3__wrapper');
+  nameColorPreview.classList.remove('js-op1__name', 'js-op2__name', 'js-op3__name');
+  circlePreview1.classList.remove('js-op1__circle', 'js-op2__circle', 'js-op3__circle');
+  circlePreview2.classList.remove('js-op1__circle', 'js-op2__circle', 'js-op3__circle');
+  circlePreview3.classList.remove('js-op1__circle', 'js-op2__circle', 'js-op3__circle');
+  circlePreview4.classList.remove('js-op1__circle', 'js-op2__circle', 'js-op3__circle');
+  iconPreview1.classList.remove('js-op1__icon', 'js-op2__icon', 'js-op3__icon');
+  iconPreview2.classList.remove('js-op1__icon', 'js-op2__icon', 'js-op3__icon');
+  iconPreview3.classList.remove('js-op1__icon', 'js-op2__icon', 'js-op3__icon');
+  iconPreview4.classList.remove('js-op1__icon', 'js-op2__icon', 'js-op3__icon');
   
-  //borderPreview.classList.remove('js-op1__wrapper');
-  nameColorPreview.classList.remove('js-op1__name');
-  circlePreview1.classList.remove('js-op1__circle');
-  circlePreview2.classList.remove('js-op1__circle');
-  circlePreview3.classList.remove('js-op1__circle');
-  circlePreview4.classList.remove('js-op1__circle');
-  iconPreview1.classList.remove('js-op1__icon');
-  iconPreview2.classList.remove('js-op1__icon');
-  iconPreview3.classList.remove('js-op1__icon');
-  iconPreview4.classList.remove('js-op1__icon');
-
-  //borderPreview.classList.remove('js-op2__wrapper');
-  nameColorPreview.classList.remove('js-op2__name');
-  circlePreview1.classList.remove('js-op2__circle');
-  circlePreview2.classList.remove('js-op2__circle');
-  circlePreview3.classList.remove('js-op2__circle');
-  circlePreview4.classList.remove('js-op2__circle');
-  iconPreview1.classList.remove('js-op2__icon');
-  iconPreview2.classList.remove('js-op2__icon');
-  iconPreview3.classList.remove('js-op2__icon');
-  iconPreview4.classList.remove('js-op2__icon');
-
-  //borderPreview.classList.remove('js-op3__wrapper');
-  nameColorPreview.classList.remove('js-op3__name');
-  circlePreview1.classList.remove('js-op3__circle');
-  circlePreview2.classList.remove('js-op3__circle');
-  circlePreview3.classList.remove('js-op3__circle');
-  circlePreview4.classList.remove('js-op3__circle');
-  iconPreview1.classList.remove('js-op3__icon');
-  iconPreview2.classList.remove('js-op3__icon');
-  iconPreview3.classList.remove('js-op3__icon');
-  iconPreview4.classList.remove('js-op3__icon');
-
+  
   if(inputValue === '1'){
     borderPreview.classList.add('js-op1__wrapper');
     nameColorPreview.classList.add('js-op1__name');
