@@ -30,7 +30,7 @@ function handlerColor(){
     iconPreview3.classList.add('js-op1__icon');
     iconPreview4.classList.add('js-op1__icon');
   }else if (inputValue === '2'){
-    //cardElement.classList.add('opt1');
+    //cardElement.classList.add('opt2');
     borderPreview.classList.add('js-op2__wrapper');
     nameColorPreview.classList.add('js-op2__name');
     circlePreview1.classList.add('js-op2__circle');
