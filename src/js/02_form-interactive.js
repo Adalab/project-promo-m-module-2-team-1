@@ -64,17 +64,17 @@ function paintPreview(event){
   const inputValue = event.target.value;
 
   if(inputName === 'name'){
-    namePreview.innerHTML = inputValue;
+    namePreview.innerHTML = formData.name === '' ? 'Nombre Apellidos' : formData.name;
   }else if(inputName === 'job'){
-    jobPreview.innerHTML = inputValue;
+    jobPreview.innerHTML = formData.job === '' ? 'Front-end developer' : formData.job;
   }else if(inputName === 'email'){
-    mailPreview.href += inputValue;
+    mailPreview.href += formData.email === '' ? '' : formData.email;
   }else if(inputName === 'phone'){
-    telPreview.href += inputValue;
+    telPreview.href += formData.phone === '' ? '' : formData.phone;
   }else if(inputName === 'linkedin'){
-    linkedinPreview.href += inputValue;
+    linkedinPreview.href += formData.linkedin === '' ? '' : formData.linkedin;
   }else if(inputName === 'github'){
-    gitHubPreview.href += inputValue;
+    gitHubPreview.href += formData.github === '' ? '' : formData.github;
   }
 }
 
@@ -84,32 +84,18 @@ function handlerFormData(event) {
 
     const inputName = event.target.name;
     const inputValue = event.target.value;
-   
-    if(inputName === 'name'){
-      formData.name = inputValue;
-    }else if(inputName === 'job'){
-      formData.job = inputValue;
-    }else if(inputName === 'email'){
-      formData.email = inputValue;
-    }else if(inputName === 'phone'){
-      formData.phone = inputValue;
-    }else if(inputName === 'linkedin'){
-      formData.linkedin = inputValue;
-    }else if(inputName === 'github'){
-      formData.github = inputValue;
-    }else if(inputName === 'palette'){
-      formData.palette = inputValue;
-    }
-    console.log(formData);
+  
+    formData[inputName] = inputValue;
+    
     paintPreview(event);
-  }
+}
   
 
-  function handlerFill(){
+function handlerFill(){
 
     handlerColor(event);
     handlerFormData(event);
-  }
+}
 
   
   form.addEventListener('change', handlerFill);
