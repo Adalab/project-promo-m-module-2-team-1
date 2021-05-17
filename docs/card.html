@@ -7,11 +7,8 @@
       src="https://kit.fontawesome.com/8f7d6eb3e3.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/images/favicon.png" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Awesome profile-cards</title>
@@ -19,11 +16,12 @@
 
   <body>
     <header class="page__header">
-      <img
-        src="./assets/images/logo-awesome-profile-cards.svg"
-        alt="logo-awesome-profile-cards"
-        class="header__logo"
-      />
+      <a href="./index.html" class="header__link"
+        ><img
+          src="./assets/images/logo-awesome-profile-cards.svg"
+          alt="logo-awesome-profile-cards"
+          class="header__logo"
+      /></a>
       <h1 class="header__title">Awesome profile-cards</h1>
     </header>
 
@@ -37,47 +35,27 @@
             <h2 class="preview__card--title js-namePreview js-op1__name">
               Nombre Apellido
             </h2>
-            <h3 class="preview__card--subtitle js-jobPreview">
-              Front-end developer
-            </h3>
+            <h3 class="preview__card--subtitle js-jobPreview">Front-end developer</h3>
           </div>
           <div class="preview__card--image js-imgPreview"></div>
           <ul class="preview__card--rrss">
             <li class="rrss-item js-op1__circle js-op1__circle1">
               <a
-                class="
-                  rrss-link
-                  fas
-                  fa-mobile-alt
-                  js-telPreview
-                  js-op1__icon js-op1__icon1
-                "
+                class="rrss-link fas fa-mobile-alt js-telPreview js-op1__icon js-op1__icon1"
                 href="tel:+34"
                 target="_blank"
               ></a>
             </li>
             <li class="rrss-item js-op1__circle js-op1__circle2">
               <a
-                class="
-                  rrss-link
-                  fas
-                  fa-envelope
-                  js-mailPreview
-                  js-op1__icon js-op1__icon2
-                "
+                class="rrss-link fas fa-envelope js-mailPreview js-op1__icon js-op1__icon2"
                 href="mailto:"
                 target="_blank"
               ></a>
             </li>
             <li class="rrss-item js-op1__circle js-op1__circle3">
               <a
-                class="
-                  rrss-link
-                  fab
-                  fa-linkedin-in
-                  js-linkedinPreview
-                  js-op1__icon js-op1__icon3
-                "
+                class="rrss-link fab fa-linkedin-in js-linkedinPreview js-op1__icon js-op1__icon3"
                 href="https://www.linkedin.com/in/"
                 target="_blank"
                 ><div class="icon"></div
@@ -85,13 +63,7 @@
             </li>
             <li class="rrss-item js-op1__circle js-op1__circle4">
               <a
-                class="
-                  rrss-link
-                  fab
-                  fa-github-alt
-                  js-gitHubPreview
-                  js-op1__icon js-op1__icon4
-                "
+                class="rrss-link fab fa-github-alt js-gitHubPreview js-op1__icon js-op1__icon4"
                 href="https://github.com/"
                 target="_blank"
               ></a>
@@ -100,14 +72,7 @@
         </div>
       </section>
 
-      <form
-        class="refillable js-form"
-        action="/signup"
-        method="post"
-        id="form"
-        class="form"
-        autocomplete="off"
-      >
+      <form class="refillable js-form " action="/signup" method="post" id="form" class="form" autocomplete="off">
         <div class="js-hidden">
           <div class="collapsable__header container js-collapsible">
             <i class="far fa-object-ungroup header-icon"></i>
@@ -119,38 +84,19 @@
               <h3 class="selection__title">Colores</h3>
               <div class="selection__options">
                 <label for="coloroption1" class="selection__options--palette">
-                  <input
-                    id="coloroption1"
-                    type="radio"
-                    value="coldcolors"
-                    name="coloroption"
-                    class="selection__options--input"
-                    checked
-                  />
+                  <input id="coloroption1" type="radio" value="coldcolors" name="coloroption" class="selection__options--input" checked />
                   <div class="palette palette__cold1"></div>
                   <div class="palette palette__cold2"></div>
                   <div class="palette palette__cold3"></div>
                 </label>
                 <label for="coloroption2" class="selection__options--palette">
-                  <input
-                    id="coloroption2"
-                    type="radio"
-                    value="hotcolors"
-                    name="coloroption"
-                    class="selection__options--input"
-                  />
+                  <input id="coloroption2" type="radio" value="hotcolors" name="coloroption" class="selection__options--input" />
                   <div class="palette palette__hot1"></div>
                   <div class="palette palette__hot2"></div>
                   <div class="palette palette__hot3"></div>
                 </label>
                 <label for="coloroption3" class="selection__options--palette">
-                  <input
-                    id="coloroption3"
-                    type="radio"
-                    value="complementary"
-                    name="coloroption"
-                    class="selection__options--input"
-                  />
+                  <input id="coloroption3" type="radio" value="complementary" name="coloroption" class="selection__options--input" />
                   <div class="palette palette__mix1"></div>
                   <div class="palette palette__mix2"></div>
                   <div class="palette palette__mix3"></div>
@@ -168,42 +114,38 @@
           </div>
           <fieldset class="section-fill container">
             <div class="hidden-content">
-              <label class="label" for="fullName">Nombre completo</label>
+              <label class="label" for="name">Nombre completo</label>
               <input
                 class="input js-inputName"
                 type="text"
-                id="fullName"
-                name="fullName"
+                id="name"
+                name="name"
                 maxlength="19"
                 placeholder="Ej: Sally Jill"
                 required
               />
-              <label class="label" for="jobPosition">Puesto</label>
+              <label class="label" for="job">Puesto</label>
               <input
                 class="input js-inputJob"
                 type="text"
-                id="jobPosition"
-                name="jobPosition"
+                id="job"
+                name="job"
                 placeholder="Ej: Front-end unicorn"
                 required
                 maxlength="21"
               />
-              <label class="label" for="add-profileImage"
-                >Imagen de perfil</label
-              >
-              <div class="form__image">
-                <label class="button" for="add-profileImage"
-                  >Añadir imagen</label
-                >
+              <label class="label" for="photo">Imagen de perfil</label>
+              <div class="action">
+                <label class="action__upload-btn" for="photo">Añadir imagen</label>
                 <input
-                  class="upload__file js-inputImg"
+                  class="action__hiddenField js-inputImg"
                   type="file"
-                  id="add-profileImage"
-                  name="add-profileImage"
+                  id="photo"
+                  name="photo"
                   value="añadir imagen"
                   required
                 />
-                <div class="snipet"></div>
+                <div class="profile__preview js__profile-preview"></div>
               </div>
               <label class="label" for="email">Email</label>
               <input
@@ -245,6 +187,7 @@
               />
             </div>
           </fieldset>
+
         </div>
 
         <div class="js-hidden hidden">
@@ -257,8 +200,7 @@
             <div class="hidden-content">
               <div class="button-container">
                 <button class="share-button share-button2">
-                  <i class="far fa-address-card address-card-icon"></i>crear
-                  tarjeta
+                  <i class="far fa-address-card address-card-icon"></i>crear tarjeta
                 </button>
               </div>
 
@@ -266,8 +208,7 @@
                 <p class="text-set-up">La tarjeta ha sido creada:</p>
 
                 <button type="submit" class="twitter-button">
-                  <i class="fab fa-twitter twitter-icon"></i>Compartir en
-                  twitter
+                  <i class="fab fa-twitter twitter-icon"></i>Compartir en twitter
                 </button>
               </div>
             </div>

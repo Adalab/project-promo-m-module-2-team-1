@@ -33,3 +33,19 @@ const iconPreview4 = document.querySelector('.js-op1__icon4');
 //------COLLAPSABLES----------------------------------------
 
 const headerClicks = document.querySelectorAll(".js-collapsible");
+
+
+//------RESET-----------------------------------------------
+const resetButton = document.querySelector('.js-resetButton')
+
+
+//----INPUT-------------------------------------------------
+const inputName = document.querySelector('.js-inputName');
+const inputJob = document.querySelector('.js-inputJob');
+const inputPhone = document.querySelector('.js-inputPhone');
+const  inputEmail= document.querySelector('.js-inputEmail');
+const  inputGitHub= document.querySelector('.js-inputGitHub');
+const  inputLinkedin= document.querySelector('.js-inputLinkedin');
+const inputColor1 = document.querySelector('.js-colorOption1');
+const inputColor2 = document.querySelector('.js-colorOption2');
+const inputColor3 = document.querySelector('.js-colorOption3');
