@@ -1,13 +1,14 @@
 .landing {
   background-color: $background-landing;
   width: 100%;
-  height: calc(100vh-110px);
+  height: 100vh;
+  //  height: calc(100vh-110px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   @include tablet {
-    height: calc(100vh-60px);
+    // height: calc(100vh-60px);
   }
 
   &__logo {
@@ -32,7 +33,7 @@
     font-family: $main-font;
     font-size: 12.8px;
     width: 250px;
-    height: 38.4px;
+    // height: 38.4px;
     text-align: center;
     color: $labelNameColor;
     margin-top: 5px;
@@ -56,7 +57,7 @@
     border: solid 1.6px #e17334;
     margin-top: 60px;
     //padding: 15px 20px 9.8px 20px;
-    margin-bottom: 90px;
+    // margin-bottom: 90px;
     @include tablet {
       width: 325px;
       height: 86px;
@@ -102,6 +103,10 @@
     text-decoration: none;
     display: flex;
     margin: auto;
+    margin-bottom: 30px;
+    @include tablet {
+      margin: 186px auto 60px;
+    }
   }
   &__icon--text {
     font-size: 15px;
