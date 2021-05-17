@@ -7,11 +7,13 @@ function handleReset(){
     formData.phone = '';
     formData.linkedin = '';
     formData.github = '';
+    formData.photo = '';
     formData.palette = 'option1';
     console.log(formData);
         
     namePreview.innerHTML = formData.name;
     jobPreview.innerHTML = formData.job;
+    // imgPreview.style.backgroundImage = url('../images/avatar-provisional.png');
     mailPreview.href = "mailto:";
     telPreview.href = "tel:+34";
     linkedinPreview.href = "https://www.linkedin.com/in/";
