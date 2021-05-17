@@ -1,16 +1,24 @@
 .wrapper {
   width: 100%;
-  background: linear-gradient(to bottom, #f5f5f5, #ffffff);
+  // background: linear-gradient(to bottom, #f5f5f5, #ffffff);
   display: flex;
   flex-direction: column;
   @include tablet {
     flex-direction: row-reverse;
     margin: 0 auto;
   }
+  @include desktop {
+    max-width: 1024px;
+  }
 }
 .refillable {
   width: 100%;
+  height: 100vh;
   margin: 0 auto;
+  @include tablet {
+    height: calc(100vh - 171px);
+    // overflow-y: scroll;
+  }
 }
 
 .container {
