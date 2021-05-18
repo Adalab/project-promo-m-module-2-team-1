@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable no-unused-vars */
 
 'use strict';
 
@@ -5,7 +7,15 @@ console.log('>> Ready :)');
 
 //-----FORM-------------------------------------------------
 const form = document.querySelector('.js-form');
-const formData = {};
+const formData = {
+  name: '',
+  job : '',
+  phone:'',
+  email:'',
+  linkedin:'',
+  github:'',
+  palette:''
+};
 
 //------PREVIEW---------------------------------------------
 const namePreview = document.querySelector('.js-namePreview');
@@ -32,11 +42,11 @@ const iconPreview4 = document.querySelector('.js-op1__icon4');
 
 //------COLLAPSABLES----------------------------------------
 
-const headerClicks = document.querySelectorAll(".js-collapsible");
+const headerClicks = document.querySelectorAll('.js-collapsible');
 
 
 //------RESET-----------------------------------------------
-const resetButton = document.querySelector('.js-resetButton')
+const resetButton = document.querySelector('.js-resetButton');
 
 
 //----INPUT-------------------------------------------------
@@ -46,6 +56,4 @@ const inputPhone = document.querySelector('.js-inputPhone');
 const  inputEmail= document.querySelector('.js-inputEmail');
 const  inputGitHub= document.querySelector('.js-inputGitHub');
 const  inputLinkedin= document.querySelector('.js-inputLinkedin');
-const inputColor1 = document.querySelector('.js-colorOption1');
-const inputColor2 = document.querySelector('.js-colorOption2');
-const inputColor3 = document.querySelector('.js-colorOption3');
+let inputPalette = document.querySelector('.js-colorOption:checked');

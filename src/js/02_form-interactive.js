@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 /* eslint-disable strict */
@@ -44,6 +45,11 @@ function paintPreview(event){
   }
 }
 
+function setLocalStorage(){
+  localStorage.setItem('formData', JSON.stringify(formData));
+
+}
+
 //ALMACENAR EL VALOR DE LOS INPUTS EN UN OBJETO FORMDATA
 
 function handlerFormData(event) {
@@ -53,6 +59,7 @@ function handlerFormData(event) {
 
   formData[inputName] = inputValue;
 
+  setLocalStorage();
   paintPreview(event);
 }
 
@@ -63,6 +70,25 @@ function handlerFill(){
   handlerFormData(event);
 }
 
+function getLocalStorage(){
 
+  let savedForm = JSON.parse(localStorage.getItem('formData'));
+  console.log(savedForm);
+
+
+  if(savedForm!==null && savedForm!==''){
+
+    inputName.value = savedForm.name;
+    inputJob.value = savedForm.job;
+    inputPhone.value = savedForm.phone;
+    inputEmail.value = savedForm.email;
+    inputGitHub.value = savedForm.github;
+    inputLinkedin.value = savedForm.linkedin;
+    //inputPalette = savedForm.palette;
+  }
+
+}
+
+getLocalStorage();
 form.addEventListener('change', handlerFill);
 
