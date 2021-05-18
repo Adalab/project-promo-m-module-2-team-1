@@ -1,19 +1,22 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
+/* eslint-disable strict */
 function handlerColor(){
 
   const checkedRadio = document.querySelector('.js-colorOption:checked');
   const inputValue = checkedRadio.value;
 
   const cardElement = document.querySelector('.js-cardElement');
-  
+
   cardElement.classList.remove('opt1', 'opt2', 'opt3');
 
-  
+
   if(inputValue === '1'){
     cardElement.classList.add('opt1');
-    
+
   }else if (inputValue === '2'){
     cardElement.classList.add('opt2');
-    
+
   }else if (inputValue === '3'){
     cardElement.classList.add('opt3');
   }
@@ -45,22 +48,21 @@ function paintPreview(event){
 
 function handlerFormData(event) {
 
-    const inputName = event.target.name;
-    const inputValue = event.target.value;
-  
-    formData[inputName] = inputValue;
-    
-    paintPreview(event);
+  const inputName = event.target.name;
+  const inputValue = event.target.value;
+
+  formData[inputName] = inputValue;
+
+  paintPreview(event);
 }
-  
+
 
 function handlerFill(){
 
-    handlerColor(event);
-    handlerFormData(event);
+  handlerColor(event);
+  handlerFormData(event);
 }
 
-  
-  form.addEventListener('change', handlerFill);
-  
-  
+
+form.addEventListener('change', handlerFill);
+
