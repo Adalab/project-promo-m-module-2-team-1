@@ -7,22 +7,22 @@ function handlerClickCreate(e) {
   e.preventDefault();
   if (formData.name === '') {
     responseElement.innerHTML = 'Tienes que rellenar el campo Nombre completo';
-    responseElement.classList.remove('hidden');
+    responseElement.classList.remove('js-hiddenTwitter');
   } else if (formData.job === '') {
     responseElement.innerHTML = 'Tienes que rellenar el campo Puesto';
-    responseElement.classList.remove('hidden');
+    responseElement.classList.remove('js-hiddenTwitter');
   } else if (formData.email === '') {
     responseElement.innerHTML = 'Tienes que rellenar el campo Email';
-    responseElement.classList.remove('hidden');
+    responseElement.classList.remove('js-hiddenTwitter');
   } else if (formData.photo === '') {
     responseElement.innerHTML = 'Tienes que añadir una Imagen de perfil';
-    responseElement.classList.remove('hidden');
+    responseElement.classList.remove('js-hiddenTwitter');
   } else if (formData.github === '') {
     responseElement.innerHTML = 'Tienes que añadir tu usuario de GitHub';
-    responseElement.classList.remove('hidden');
+    responseElement.classList.remove('js-hiddenTwitter');
   } else if (formData.linkedin === '') {
     responseElement.innerHTML = 'Tienes que añadir tu usuario de Linkedin';
-    responseElement.classList.remove('hidden');
+    responseElement.classList.remove('js-hiddenTwitter');
   } else {
     fetch('https://awesome-profile-cards.herokuapp.com/card', {
       method: 'POST',
@@ -31,7 +31,7 @@ function handlerClickCreate(e) {
       },
       body: JSON.stringify(formData),
     })
-      .then((response) => response.JSON())
+      .then((response) => response.json())
       .then((data) => {
         if (data.success === false) {
           responseElement.innerHTML = 'Tienes que rellenar todos los campos';
