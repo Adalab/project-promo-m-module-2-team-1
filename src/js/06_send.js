@@ -33,7 +33,7 @@ function handlerClickCreate(e) {
     })
       .then((response) => response.json())
       .then((data) => {
-        if (data.success === "false") {
+        if (data.success === false) {
           responseElement.innerHTML = "Tienes que rellenar todos los campos";
           responseElement.classList.remove("js-hiddenTwitter");
         } else {
