@@ -55,6 +55,7 @@ function handlerFormData(event) {
   console.log(formData);
 
   paintPreview(event);
+  setLocalStorage();
 }
 
 
