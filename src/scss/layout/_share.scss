@@ -41,12 +41,12 @@
 }
 
 /*OPCIÓN 2*/
-/*.share-button2 {
+.js-hiddenTwitter {
   display: none;
-  background-color: #d5d5d5;
-}*/
+}
 
 .set-up-container {
+  display: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,7 +77,7 @@
 }
 
 .twitter-button {
-  display: none;
+  //display: none;
   width: 181px;
   height: 30px;
   border-radius: 3px;
