@@ -53,6 +53,7 @@ function handleReset() {
   updateInputs();
   resetPalettes();
   setLocalStorage();
+  responseElement.innerHTML ='';
 
 }
 
