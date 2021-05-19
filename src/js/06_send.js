@@ -40,11 +40,11 @@ function handlerClickCreate(e) {
           responseElement.innerHTML = `Tu tarjeta ha sido creada: <a href="${data.cardURL}">`;
           responseElement.classList.remove('js-hiddenTwitter');
         }
-      })
-      .catch(() => {
-        responseElement.innerHTML = 'Inténtalo de nuevo más tarde';
-        responseElement.classList.remove('js-hiddenTwitter');
       });
+    //.catch(() => {
+    //responseElement.innerHTML = "Inténtalo de nuevo más tarde";
+    //responseElement.classList.remove("js-hiddenTwitter");
+    //});
   }
 }
 btn.addEventListener('click', handlerClickCreate);
