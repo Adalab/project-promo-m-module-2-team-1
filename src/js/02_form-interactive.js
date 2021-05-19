@@ -52,6 +52,7 @@ function handlerFormData(event) {
   const inputValue = event.target.value;
 
   formData[inputName] = inputValue;
+  console.log(formData);
 
   paintPreview(event);
 }
