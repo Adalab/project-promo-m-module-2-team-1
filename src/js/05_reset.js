@@ -52,6 +52,7 @@ function handleReset() {
   updatePreview();
   updateInputs();
   resetPalettes();
+  setLocalStorage();
 
 }
 
