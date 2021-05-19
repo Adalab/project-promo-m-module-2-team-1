@@ -24,11 +24,15 @@ function handlerClickCreate(e) {
     responseElement.innerHTML = 'Tienes que añadir tu usuario de Linkedin';
     responseElement.classList.remove('hidden');
   } else {
-    fetch('https://awesome-profile-cards.herokuapp.com/card', {
-      method: 'POST',
-      mode: 'cors',
-      body: JSON.stringify(formData),
-    })
+    fetch(
+      'https://awesome-profile-cards.herokuapp.com/card',
+      {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
       .then((response) => response.JSON())
       .then((data) => {
         if (data.success === false) {
