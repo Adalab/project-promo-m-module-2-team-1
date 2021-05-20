@@ -5,8 +5,8 @@
 const fr = new FileReader();
 const fileField = document.querySelector('.js-inputImg');
 // const profileImage = document.querySelector('.js__profile-image');
-let profileImage = document.querySelector('.js-imgPreview');
-let profilePreview = document.querySelector('.js__profile-preview');
+const profileImage = document.querySelector('.js-imgPreview');
+const profilePreview = document.querySelector('.js__profile-preview');
 
 
 /**
