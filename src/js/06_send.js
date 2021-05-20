@@ -8,23 +8,18 @@ function handlerClickCreate(e) {
   e.preventDefault();
   console.log(formData);
   if (formData.name === "") {
-    responseElement.innerHTML = "Tienes que rellenar el campo Nombre completo";
-    responseElement.classList.remove("js-hiddenTwitter");
+    responseElement.innerHTML = `<h3 class="text-set-up">Tienes que rellenar el campo: Nombre completo</h3>`;
   } else if (formData.job === "") {
-    responseElement.innerHTML = "Tienes que rellenar el campo Puesto";
-    responseElement.classList.remove("js-hiddenTwitter");
-  } else if (formData.email === "") {
-    responseElement.innerHTML = "Tienes que rellenar el campo Email";
-    responseElement.classList.remove("js-hiddenTwitter");
+    responseElement.classList.remove("text-set-up");
+    responseElement.innerHTML = `<h3 class="text-set-up">Tienes que rellenar el campo: Puesto</h3>`;
   } else if (formData.photo === "") {
-    responseElement.innerHTML = "Tienes que añadir una Imagen de perfil";
-    responseElement.classList.remove("js-hiddenTwitter");
-  } else if (formData.github === "") {
-    responseElement.innerHTML = "Tienes que añadir tu usuario de GitHub";
-    responseElement.classList.remove("js-hiddenTwitter");
+    responseElement.innerHTML = `<h3 class="text-set-up">Tienes que añadir una imagen de perfil</h3>`;
+  } else if (formData.email === "") {
+    responseElement.innerHTML = `<h3 class="text-set-up">Tienes que rellenar el campo: Email</h3>`;
   } else if (formData.linkedin === "") {
-    responseElement.innerHTML = "Tienes que añadir tu usuario de Linkedin";
-    responseElement.classList.remove("js-hiddenTwitter");
+    responseElement.innerHTML = `<h3 class="text-set-up">Tienes que rellenar el campo: Linkedin</h3>`;
+  } else if (formData.github === "") {
+    responseElement.innerHTML = `<h3 class="text-set-up">Tienes que rellenar el campo: GitHub</h3>`;
   } else {
     fetch("https://awesome-profile-cards.herokuapp.com/card", {
       method: "POST",
@@ -41,7 +36,7 @@ function handlerClickCreate(e) {
         } else {
           // responseElement.innerHTML = `Tu tarjeta ha sido creada: <a href="${data.cardURL}">${data.cardURL}</a>`;
           // responseElement.classList.remove('js-hiddenTwitter');
-          responseElement.innerHTML += `<h3 class="text-set-up">La tarjeta ha sido creada:</h3>`;
+          responseElement.innerHTML = `<h3 class="text-set-up">La tarjeta ha sido creada:</h3>`;
           responseElement.innerHTML += `<p><a href="${data.cardURL}" class="link-set-up js-twitter-link" target="_blank">${data.cardURL}</a></p>`;
           responseElement.innerHTML += `<a class="twitter-button js-btn-twitter" target="_blank">
         <i class="fa fa-twitter"></i> Compartir en Twitter
