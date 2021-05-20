@@ -29,9 +29,15 @@ function getLocalStorage() {
     inputEmail.value = savedForm.email;
     inputGitHub.value = savedForm.github;
     inputLinkedin.value = savedForm.linkedin;
-    console.log(inputName.value);
 
+    //VOLCAMOS DATOS A OBJETO FORMDATA
     formData.name = savedForm.name;
+    formData.job = savedForm.job;
+    formData.photo = savedForm.photo;
+    formData.phone = savedForm.phone;
+    formData.email = savedForm.email;
+    formData.github = savedForm.github;
+    formData.linkedin = savedForm.linkedin;
 
     //VOLCAMOS DATOS A PREVIEW
     if (savedForm.name !== "") {
