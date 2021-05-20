@@ -37,6 +37,7 @@ function writeImage() {
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
   formData.photo = fr.result;
+  console.log(formData.photo);
 }
 
 

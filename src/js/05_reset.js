@@ -52,9 +52,9 @@ function handleReset() {
   updatePreview();
   updateInputs();
   resetPalettes();
-  setLocalStorage();
-  responseElement.innerHTML ='';
 
+  localStorage.clear();
+  responseElement.innerHTML ='';
 }
 
 resetButton.addEventListener('click', handleReset);
