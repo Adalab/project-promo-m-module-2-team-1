@@ -27,43 +27,43 @@
 
     <main class="main wrapper">
       <section class="page__preview">
-        <button class="page__preview--button">
+        <button class="page__preview--button js-resetButton">
           <i class="far fa-trash-alt"></i>Reset
         </button>
-        <div class="page__preview--card">
-          <div class="preview__card--title-wrapper js-op1__wrapper">
-            <h2 class="preview__card--title js-namePreview js-op1__name">
+        <div class="page__preview--card js-cardElement opt1">
+          <div class="preview__card--title-wrapper js-op__wrapper">
+            <h2 class="preview__card--title js-namePreview js-op__name">
               Nombre Apellido
             </h2>
             <h3 class="preview__card--subtitle js-jobPreview">Front-end developer</h3>
           </div>
           <div class="preview__card--image js-imgPreview"></div>
           <ul class="preview__card--rrss">
-            <li class="rrss-item js-op1__circle js-op1__circle1">
+            <li class="rrss-item js-op__circle js-op1__circle1">
               <a
-                class="rrss-link fas fa-mobile-alt js-telPreview js-op1__icon js-op1__icon1"
+                class="rrss-link fas fa-mobile-alt js-telPreview js-op__icon js-op1__icon1"
                 href="tel:+34"
                 target="_blank"
               ></a>
             </li>
-            <li class="rrss-item js-op1__circle js-op1__circle2">
+            <li class="rrss-item js-op__circle js-op1__circle2">
               <a
-                class="rrss-link fas fa-envelope js-mailPreview js-op1__icon js-op1__icon2"
+                class="rrss-link fas fa-envelope js-mailPreview js-op__icon js-op1__icon2"
                 href="mailto:"
                 target="_blank"
               ></a>
             </li>
-            <li class="rrss-item js-op1__circle js-op1__circle3">
+            <li class="rrss-item js-op__circle js-op1__circle3">
               <a
-                class="rrss-link fab fa-linkedin-in js-linkedinPreview js-op1__icon js-op1__icon3"
+                class="rrss-link fab fa-linkedin-in js-linkedinPreview js-op__icon js-op1__icon3"
                 href="https://www.linkedin.com/in/"
                 target="_blank"
                 ><div class="icon"></div
               ></a>
             </li>
-            <li class="rrss-item js-op1__circle js-op1__circle4">
+            <li class="rrss-item js-op__circle js-op1__circle4">
               <a
-                class="rrss-link fab fa-github-alt js-gitHubPreview js-op1__icon js-op1__icon4"
+                class="rrss-link fab fa-github-alt js-gitHubPreview js-op__icon js-op1__icon4"
                 href="https://github.com/"
                 target="_blank"
               ></a>
@@ -84,19 +84,19 @@
               <h3 class="selection__title">Colores</h3>
               <div class="selection__options">
                 <label for="coloroption1" class="selection__options--palette">
-                  <input id="coloroption1" type="radio" value="coldcolors" name="coloroption" class="selection__options--input" checked />
+                  <input id="1" type="radio" value="1" name="palette" class="selection__options--input js-colorOption js-paletteDefault" checked />
                   <div class="palette palette__cold1"></div>
                   <div class="palette palette__cold2"></div>
                   <div class="palette palette__cold3"></div>
                 </label>
                 <label for="coloroption2" class="selection__options--palette">
-                  <input id="coloroption2" type="radio" value="hotcolors" name="coloroption" class="selection__options--input" />
+                  <input id="2" type="radio" value="2" name="palette" class="selection__options--input js-colorOption" />
                   <div class="palette palette__hot1"></div>
                   <div class="palette palette__hot2"></div>
                   <div class="palette palette__hot3"></div>
                 </label>
                 <label for="coloroption3" class="selection__options--palette">
-                  <input id="coloroption3" type="radio" value="complementary" name="coloroption" class="selection__options--input" />
+                  <input id="3" type="radio" value="3" name="palette" class="selection__options--input js-colorOption" />
                   <div class="palette palette__mix1"></div>
                   <div class="palette palette__mix2"></div>
                   <div class="palette palette__mix3"></div>
@@ -113,81 +113,27 @@
             <i class="fas fa-chevron-up hidden__icon"></i>
           </div>
           <fieldset class="section-fill container">
-            <div class="hidden-content">
+            <div class="hidden-content form-padding">
               <label class="label" for="name">Nombre completo</label>
-              <input
-                class="input js-inputName"
-                type="text"
-                id="name"
-                name="name"
-                maxlength="19"
-                placeholder="Ej: Sally Jill"
-                required
-              />
+              <input class="input js-inputName" type="text" id="name" name="name" maxlength="19" placeholder="Ej: Sally Jill" required />
               <label class="label" for="job">Puesto</label>
-              <input
-                class="input js-inputJob"
-                type="text"
-                id="job"
-                name="job"
-                placeholder="Ej: Front-end unicorn"
-                required
-                maxlength="21"
-              />
+              <input class="input js-inputJob" type="text" id="job" name="job" placeholder="Ej: Front-end unicorn" required maxlength="21" />
               <label class="label" for="photo">Imagen de perfil</label>
               <div class="action">
                 <label class="action__upload-btn" for="photo">Añadir imagen</label>
-                <input
-                  class="action__hiddenField js-inputImg"
-                  type="file"
-                  id="photo"
-                  name="photo"
-                  value="añadir imagen"
-                  required
-                />
+                <input class="action__hiddenField js-inputImg" type="file" id="photo" name="photo" value="añadir imagen" required />
                 <div class="profile__preview js__profile-preview"></div>
               </div>
               <label class="label" for="email">Email</label>
-              <input
-                class="input js-inputEmail"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Ej: sally-hill@gmail.com"
-                required
-              />
+              <input class="input js-inputEmail" type="email" id="email" name="email" placeholder="Ej: sally-hill@gmail.com" required />
               <label class="label" for="phone">Teléfono</label>
-              <input
-                class="input js-inputTel"
-                type="tel"
-                id="phone"
-                name="phone"
-                pattern=".{9}"
-                title="El número debe contener 9 dígitos"
-                placeholder="Ej: 555-55-55-55"
-                required
-              />
+              <input class="input js-inputPhone" type="tel" id="phone" name="phone" pattern=".{9}" title="El número debe contener 9 dígitos" placeholder="Ej: 555-55-55-55" required />
               <label class="label" for="linkedin">Linkedin</label>
-              <input
-                class="input js-inputLinkedin"
-                type="text"
-                id="linkedin"
-                name="linkedin"
-                placeholder="Ej: linkedin.com/in/sally.hill"
-                required
-              />
+              <input class="input js-inputLinkedin" type="text" id="linkedin" name="linkedin" placeholder="Ej: sally-hill" required />
               <label class="label" for="github">Github</label>
-              <input
-                class="input js-inputGitHub"
-                type="text"
-                id="github"
-                name="github"
-                placeholder="Ej: @sally-hill"
-                required
-              />
+              <input class="input js-inputGitHub" type="text" id="github" name="github" placeholder="Ej: sally-hill" required />
             </div>
           </fieldset>
-
         </div>
 
         <div class="js-hidden hidden">
@@ -199,20 +145,19 @@
           <fieldset class="section-share container">
             <div class="hidden-content">
               <div class="button-container">
-                <button class="share-button share-button2">
+                <button class="share-button js-create-card share-button2">
                   <i class="far fa-address-card address-card-icon"></i>crear tarjeta
                 </button>
               </div>
 
-              <div class="set-up-container">
-                <p class="text-set-up">La tarjeta ha sido creada:</p>
-
-                <button type="submit" class="twitter-button">
+              <div class="set-up-container js-response js-hiddenTwitter">
+                <!-- <button type="submit" class="twitter-button js-hiddenTwitter">
                   <i class="fab fa-twitter twitter-icon"></i>Compartir en twitter
-                </button>
+                </button> -->
               </div>
             </div>
           </fieldset>
+
         </div>
       </form>
     </main>
