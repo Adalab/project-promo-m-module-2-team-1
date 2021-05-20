@@ -20,8 +20,8 @@
   width: 199px;
   height: 50px;
   border-radius: 12px;
-  background-color: $contrast-color;
   border-style: none;
+  background-color: $contrast-color;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.32);
   color: $font-button-color;
   text-transform: uppercase;
@@ -45,6 +45,17 @@
   display: none;
 }
 
+.btn-disable {
+  background-color: #d5d5d5;
+  &:hover {
+    pointer-events: none;
+  }
+}
+
+.set-up-container-top {
+  border-top: $grey-stroke 1px solid;
+}
+
 .set-up-container {
   display: none;
   display: flex;
@@ -56,7 +67,7 @@
 }
 
 .text-set-up {
-  display: none;
+  //display: none;
   font-size: 18px;
   font-weight: 600;
   color: $title-section-color;
@@ -84,10 +95,15 @@
   background-color: #00a0f5;
   border-style: none;
   color: $font-button-color;
+  font-family: $main-font;
   font-size: 14px;
-  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 30px;
   box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.32);
-  vertical-align: middle;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  // vertical-align: middle;
 }
 
 .twitter-icon {
