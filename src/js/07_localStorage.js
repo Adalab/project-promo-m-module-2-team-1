@@ -53,10 +53,9 @@ function getLocalStorage() {
     }
 
     profileImage.style.backgroundImage =
-      // "url(../assets/images/avatar-provisional.png)";
-      `url (${savedForm.photo})`;
+      `url (${fr.result})`;
     profilePreview.style.backgroundImage =
-      "url(../assets/images/avatar-provisional.png)";
+      `url(${fr.result})`;
 
     mailPreview.href = `mailto:${savedForm.email}`;
     telPreview.href = `tel:+34${savedForm.phone}`;
