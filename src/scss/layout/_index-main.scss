@@ -1,29 +1,28 @@
 .landing {
-  background-color: $background-landing;
+  background-image: url(../images/bosque-2.png);
+  background-position: center;
+  background-size: cover;
   width: 100%;
   height: 100vh;
-  //  height: calc(100vh-110px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @include tablet {
-    // height: calc(100vh-60px);
-  }
 
   &__logo {
-    width: 250px;
-    height: 63px;
-    margin: 10px 35px 50px 35px;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    margin: 10px 35px 30px 35px;
     @include tablet {
-      width: 419px;
-      height: 105px;
+      width: 250px;
+      height: 250px;
     }
   }
   &__title {
-    color: $contrast-color;
-    font-size: 19px;
-    font-family: $title-font;
+    color: #426633;
+    font-size: 20px;
+    font-family: $main-font;
     font-weight: bold;
     @include tablet {
       font-size: 24px;
@@ -31,9 +30,8 @@
   }
   &__subtitle {
     font-family: $main-font;
-    font-size: 12.8px;
+    font-size: 11px;
     width: 250px;
-    // height: 38.4px;
     text-align: center;
     color: $labelNameColor;
     margin-top: 5px;
@@ -46,6 +44,7 @@
   &__wrapper {
     width: 268px;
     height: 74px;
+    background-color: #ffffffD9;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -54,10 +53,8 @@
     font-family: $main-font;
     font-size: 12.8px;
     border-radius: 4px;
-    border: solid 1.6px #e17334;
-    margin-top: 60px;
-    //padding: 15px 20px 9.8px 20px;
-    // margin-bottom: 90px;
+    border: solid 1.6px #426633;
+    margin-top: 30px;
     @include tablet {
       width: 325px;
       height: 86px;
@@ -65,21 +62,21 @@
     }
   }
   &__icon-design {
-    color: $contrast-color;
+    color: #426633;
     display: flex;
     flex-direction: column;
     justify-content: center;
     line-height: 20px;
   }
   &__icon-fill {
-    color: $contrast-color;
+    color: #426633;
     display: flex;
     flex-direction: column;
     justify-content: center;
     line-height: 20px;
   }
   &__icon-share {
-    color: $contrast-color;
+    color: #426633;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,7 +93,7 @@
   &__link {
     border-radius: 21px;
     color: white;
-    background-color: $dirty-blue;
+    background-color: #aecda2;
     width: 129px;
     height: 42px;
     appearance: button;
@@ -104,9 +101,12 @@
     display: flex;
     margin: auto;
     margin-bottom: 30px;
-    margin-top: 38.6px;
+    margin-top: 30px;
+    &:hover{
+      background-color: #426633;
+    }
     @include tablet {
-      margin-top: 100px;
+      margin-top: 90px;
       margin-bottom: 60px;
     }
   }
@@ -128,5 +128,20 @@
   padding: 0px 35px;
   @include tablet {
     padding: 0px 175px;
+  }
+}
+.title-wrapper{
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  width: 268px;
+  background-color: #ffffffD9;
+  border-radius: 4px;
+  border: solid 1.6px #426633;
+  @include tablet {
+    width: 325px;
   }
 }
