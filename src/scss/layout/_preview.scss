@@ -1,8 +1,11 @@
 .page__preview {
   width: 100%;
   height: auto;
+  border-radius: 8px;
   box-sizing: border-box;
-  background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+  background-image: url("../images/bosque-2.png");
+  background-position: top;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +32,8 @@
   margin-bottom: rem(20);
   border-radius: rem(15);
   border: solid 2px white;
-  color: #54585a;
+  background-color: #aecda2;
+  color: #426633;
   text-transform: uppercase;
   position: relative;
   left: rem(-83);
@@ -40,7 +44,7 @@
   &:hover {
     color: white;
     transform: scale(1.1);
-    border: solid 2px #54585a;
+    border: solid 2px #426633;
     cursor: pointer;
   }
 }
@@ -82,7 +86,7 @@
 .preview__card--image {
   width: 100%;
   height: rem(200);
-  background-image: url("../images/avatar-provisional.png");
+  background-image: url("../images/listen-logo.png");
   background-size: cover;
   background-position: center;
 }

@@ -17,8 +17,8 @@ function updateForm(){
 function updatePreview(){
   namePreview.innerHTML = 'Nombre Apellido';
   jobPreview.innerHTML = 'Front-end developer';
-  profileImage.style.backgroundImage = 'url(./assets/images/avatar-provisional.png)';
-  profilePreview.style.backgroundImage = 'url(./assets/images/avatar-provisional.png)';
+  profileImage.style.backgroundImage = 'url(./assets/images/listen-logo.png)';
+  profilePreview.style.backgroundImage = 'url(./assets/images/listen-logo.png)';
   mailPreview.href = 'mailto:';
   telPreview.href = 'tel:+34';
   linkedinPreview.href = 'https://www.linkedin.com/in/';
