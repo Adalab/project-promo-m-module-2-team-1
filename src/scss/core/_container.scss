@@ -2,7 +2,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
   @include tablet {
     flex-direction: row-reverse;
     margin: 0 auto;
