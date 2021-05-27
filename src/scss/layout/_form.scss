@@ -37,7 +37,7 @@
   display: block;
   height: rem(30);
   width: 100%;
-  border: solid rem(1) $border-fields-color;
+  border: solid rem(1) #aecda2;
   box-sizing: border-box;
   padding: rem(3) 0 rem(7) rem(9);
   margin-bottom: rem(20);
@@ -52,7 +52,7 @@
   width: rem(140);
   height: rem(30);
   appearance: none;
-  background-color: $contrast-color;
+  background-color: #426633;
   text-align: center;
   font-family: $main-font;
   font-size: rem(14);
@@ -65,7 +65,7 @@
   box-shadow: 0 1px rem(4) 0 rgba(0, 0, 0, 0.32);
   margin-bottom: rem(20);
   &:hover {
-    background-color: fade-in($color: $labelNameColor, $amount: 0);
+    background-color: fade-in($color: #92c57d, $amount: 0);
     transition: background-color ease 1s, box-shadow ease 0.5s;
     box-shadow: 0 0 rem(6) 0 rgba(0, 0, 0, 0.5);
   }
@@ -76,7 +76,7 @@
 .profile__preview {
   width: rem(30);
   height: rem(30);
-  border: rem(1) solid $border-fields-color;
+  border: rem(1) solid #aecda2;
   display: inline-block;
   margin-left: rem(20);
   background-image: url("../images/listen-logo.png");

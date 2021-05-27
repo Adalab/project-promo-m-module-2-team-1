@@ -21,7 +21,7 @@
   height: 50px;
   border-radius: 12px;
   border-style: none;
-  background-color: $contrast-color;
+  background-color: #426633;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.32);
   color: $font-button-color;
   text-transform: uppercase;
@@ -29,7 +29,7 @@
   font-family: $main-font;
   font-weight: 600;
   &:hover {
-    background-color: fade-in($color: $labelNameColor, $amount: 0);
+    background-color: fade-in($color: #92c57d, $amount: 0);
     transition: background-color ease 1s, box-shadow ease 0.5s;
     box-shadow: 0 0 rem(6) 0 rgba(0, 0, 0, 0.5);
   }
