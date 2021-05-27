@@ -5,6 +5,7 @@
   @include tablet {
     flex-direction: row-reverse;
     margin: 0 auto;
+    margin-bottom: 200px;
   }
   @include desktop {
     max-width: 1024px;
@@ -12,10 +13,10 @@
 }
 .refillable {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   margin: 0 auto;
   @include tablet {
-    height: calc(100vh - 171px);
+    min-height: 561px;
   }
 }
 
