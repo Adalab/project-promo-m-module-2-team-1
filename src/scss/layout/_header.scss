@@ -9,7 +9,7 @@
   align-items: center;
 
   @media all and (min-width: 768px) {
-    justify-content: flex-start;
+    justify-content: space-between;
     padding-left: 30px;
   }
   @media all and (min-width: 1024px) {

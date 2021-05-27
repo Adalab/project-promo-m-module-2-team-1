@@ -9,7 +9,7 @@
     ></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="icon" href="./assets/images/favicon-ltmc.png"/>
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Awesome profile-cards</title>
   </head>
@@ -18,11 +18,15 @@
     <header class="page__header">
       <a href="./index.html" class="header__link"
         ><img
-          src="./assets/images/logo-awesome-profile-cards.svg"
+          src="./assets/images/listen-logo.png"
           alt="logo-awesome-profile-cards"
           class="header__logo"
       /></a>
-      <h1 class="header__title">Awesome profile-cards</h1>
+      <h1 class="header__title">Listen To My Cards</h1>
+      <audio id="miaudio" class="miaudio" controls autoplay>
+        <source src="./assets/audio/Tez-Cadey-Seve.mp3" type="audio/mpeg">
+        <source src="./assets/audio/Tez-Cadey-Seve.ogg" type="audio/ogg">
+      </audio>
     </header>
 
     <main class="main wrapper">
@@ -84,7 +88,7 @@
               <h3 class="selection__title">Colores</h3>
               <div class="selection__options">
                 <label for="coloroption1" class="selection__options--palette">
-                  <input id="1" type="radio" value="1" name="palette" class="selection__options--input js-colorOption js-paletteDefault" checked />
+                  <input id="1" type="radio" value="1" name="palette" class="selection__options--input js-colorOption js-paletteDefault" />
                   <div class="palette palette__cold1"></div>
                   <div class="palette palette__cold2"></div>
                   <div class="palette palette__cold3"></div>
@@ -127,7 +131,7 @@
               <label class="label" for="email">Email</label>
               <input class="input js-inputEmail" type="email" id="email" name="email" placeholder="Ej: sally-hill@gmail.com" required />
               <label class="label" for="phone">Teléfono</label>
-              <input class="input js-inputPhone" type="tel" id="phone" name="phone" pattern=".{9}" title="El número debe contener 9 dígitos" placeholder="Ej: 555-55-55-55" required />
+              <input class="input js-inputPhone" type="tel" id="phone" name="phone" pattern="[0-9]{9}" title="El número debe contener 9 dígitos" placeholder="Ej: 555-55-55-55" required />
               <label class="label" for="linkedin">Linkedin</label>
               <input class="input js-inputLinkedin" type="text" id="linkedin" name="linkedin" placeholder="Ej: sally-hill" required />
               <label class="label" for="github">Github</label>
@@ -162,7 +166,7 @@
       </form>
     </main>
     <footer class="footer">
-      <small class="footer__small"> Awesome profile-cards &copy; 2021 </small>
+      <small class="footer__small"> Listen To My Card &copy; 2021 </small>
       <img
         src="./assets/images/logo-adalab.png"
         alt="Logo Adalab"
