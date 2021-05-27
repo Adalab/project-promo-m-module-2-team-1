@@ -1,10 +1,9 @@
 .page__preview {
   width: 100%;
   height: auto;
-  border-radius: 8px;
   box-sizing: border-box;
   background-image: url("../images/bosque-2.png");
-  background-position: top;
+  background-position: left;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -13,10 +12,8 @@
   padding: rem(40) 0;
 
   @include tablet {
+    border-radius: 8px;
     margin: rem(20) rem(40) rem(20) rem(15);
-    max-width: rem(329);
-  }
-  @include tablet {
     max-width: rem(585);
   }
 }
