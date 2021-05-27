@@ -1,6 +1,4 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
-'use strict';
+/* eslint-disable strict */
 
 const fr = new FileReader();
 const fileField = document.querySelector('.js-inputImg');
@@ -34,10 +32,10 @@ function writeImage() {
    * podemos pasarlo como background a la imagen de perfil y a la vista previa
    * de nuestro componente.
    */
-  profileImage.style.backgroundImage = `url(${fr.result})`;
-  profilePreview.style.backgroundImage = `url(${fr.result})`;
   formData.photo = fr.result;
-  console.log(formData.photo);
+  profileImage.style.backgroundImage = `url(${formData.photo})`;
+  profilePreview.style.backgroundImage = `url(${formData.photo})`;
+  setLocalStorage();
 }
 
 
@@ -55,15 +53,3 @@ function fakeFileClick() {
  * - al campo oculto para cuando cambie su value
  */
 fileField.addEventListener('change', getImage);
-
-
-
-//------------------------------------------------//
-//---esto--es--lo--que--tenía--antes---//
-
-// const collapsableSection = document.querySelector('.js-collapsable-header');
-
-// collapsableSection.addEventListener('click',);
-// function {
-
-// }

@@ -29,6 +29,7 @@ function getLocalStorage() {
     inputEmail.value = savedForm.email;
     inputGitHub.value = savedForm.github;
     inputLinkedin.value = savedForm.linkedin;
+    profilePreview.value = savedForm.photo;
 
     //VOLCAMOS DATOS A OBJETO FORMDATA
     formData.name = savedForm.name;
@@ -52,10 +53,8 @@ function getLocalStorage() {
       jobPreview.innerHTML = "Front-end developer";
     }
 
-    profileImage.style.backgroundImage =
-      `url (${fr.result})`;
-    profilePreview.style.backgroundImage =
-      `url(${fr.result})`;
+    profileImage.style.backgroundImage = `url(${savedForm.photo})`;
+    profilePreview.style.backgroundImage = `url(${savedForm.photo})`;
 
     mailPreview.href = `mailto:${savedForm.email}`;
     telPreview.href = `tel:+34${savedForm.phone}`;
