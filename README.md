@@ -1,124 +1,53 @@
-![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
+![Imagen1](https://user-images.githubusercontent.com/81922944/119933343-36bee300-bf84-11eb-8e33-5ec8f637ee4d.png)
 
-# Adalab web starter kit
 
-Ahoy! Este es nuestro Starter Kit creado en **node y gulp**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
+   
 
-Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
+# Listen to my card (o cómo crear y compartir tarjetas de visita profesionales de forma interactiva)
+Esta aplicación sirve para generar tarjetas de visita personalizadas y virtuales que se podrán publicar en Twitter. 
+En menos de dos minutos tu tarjeta de presentación estará lista para compartir, con tus datos personales y profesionales, para que, de una forma fácil y rápida, los cazatalentos :wink: puedan consultar tu currículum en LinkedIn y tu perfil de GitHub. Puedes crearla a través de cualquier dispositivo pues es totalmente responsive.
 
-En el Kit hay 3 tipos de ficheros y carpetas:
+Además, podrás previsualizar cómo va quedando tu tarjeta a medida que la vas rellenando y, para ahorrar tiempo y esfuerzo, toda tu información estará almacenada en tu Navegador en caso de que cierres o recargues la página.
 
-- Los ficheros que están sueltos en la raíz del repositorio, como gulpfile.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos.
-- La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
-- Las carpetas `public/` y `docs/`, que son generadas automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/`, los procesa y los genera dentro de `public/` y `docs/`.
+## Cómo la hemos creado:
 
-## Guía de inicio rápido
+Con una equilibrada mezcla de HTML, CSS, JavaScript y API. Gracias al Starter Kit de Adalab, nos hemos valido de `gulp`, el cual permite convertir el Sass sobre el que hemos trabajado en CSS, además de estar pendiente de nuestros archivos, compilarlos y recargar el servidor cada vez que hacíamos un cambio :tada:.
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) para trabajar con este Starter Kit:
+## Descárgate el repositorio :inbox_tray::
 
-### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
+Si quieres descargar y clonar el repositorio, tendrás que instalar [Node.js](https://nodejs.org/) y [Gulp](https://gulpjs.com). A continuación, instala las dependencias locales con `npm install` y arranca el kit con `gulp`. 
 
-1. **Crea tu propio repositorio.**
-1. Descarga este **Starter kit desde GitHub**.
-   - No recomendamos que clones este repo ya que no podrás añadir commits.
-1. **Copia todos los ficheros** de este Starter kit en la carpeta raíz de tu repositorio.
-   - Recuerda que debes copiar **también los ficheros ocultos**.
-   - Si has decidido clonar este repo, no debes copiar la carpeta `.git`. Si lo haces estarás machacando tu propio repositorio.
-1. **Abre una terminal** en la carpeta raíz de tu repositorio.
-1. **Instala las dependencias** locales ejecutando en la terminal el comando:
+También puedes ver y usar la aplicación a través de [este enlace](http://beta.adalab.es/project-promo-m-module-2-team-1/).
 
-```bash
-npm install
-```
+## Cómo funciona:
 
-### Pasos para arrancar el proyecto:
+De forma sencilla e intuitiva, la página de inicio sirve de carta de presentación del proyecto, cuyo objetivo es hacer networking de forma sencilla y sostenible. Se trata de la landing page, donde te adelantamos lo que puedes hacer con esta herramienta: diseñar una tarjeta, rellenarla con tus datos y compartirla. Clica en 'Comenzar' y ¡que empiece la aventura! :nerd_face: :volcano:
 
-Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
 
-```bash
-npm start
-```
+## Por qué la música:
 
-Este comando:
+Hemos querido diferenciarnos de las demás webs dedicadas a la creación de tarjetas aportando un mínimo valor añadido. Como a todas nos apasiona la música, y pensamos que no se puede vivir sin ella, ofrecemos la posibilidad de disfrutar de una buena canción mientras estás creando tu tarjeta. Por ello, al abrir la página para crear tarjetas te encontrarás con una melodía, un tema musical que te aportará entretenimiento mientras trabajas en la creación de tu tarjeta profesional, ¿no es agradable? :musical_note:
 
-- **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
-- También **observa** todos los ficheros que hay dentro de la carpeta `src/`, para que cada vez que modifiques un fichero **refresca tu página en Chrome**.
-- También **procesa los ficheros** HTML, SASS / CSS y JS y los **genera y guarda en la carpeta `public/`**. Por ejemplo:
-   - Convierte los ficheros SASS en CSS.
-   - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
+## ¿Por dónde empezar?
 
-Después de ejecutar `npm start` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
+Ahora que conoces todos los detalles, puedes empezar a crear tu tarjeta de visita personalizada paso a paso.
 
-### Pasos para publicar el proyecto en GitHub Pages:
+### Diseña :art::
 
-Para generar tu página para producción ejecuta el comando:
+En esta sección podrás seleccionar la paleta de colores para tu tarjeta: tonos azules, rojos, amarillos o grises. ¿Te has preguntado alguna vez cuál es el color que mejor te representa?
 
-```bash
-npm run docs
-```
+### Rellena :pencil::
 
-Y a continuación:
+Aquí podrás introducir tus datos personales y profesionales. Los básicos y necesarios para que puedan acceder a tu información profesional y contactarte. Así que te recomendamos que revises tus perfiles de LinkedIn y GitHub antes de compartirlos y que escojas una foto apropiada que transmita lo buena profesional que eres :woman_technologist:.
 
-1. Sube a tu repo la carpeta `docs/` que se te acaba de generar.
-1. Entra en la pestaña `settings` de tu repo.
-1. Y en el apartado de GitHub Pages activa la opción **master branch /docs folder**.
-1. Y ya estaría!!!
+A medida que completes los campos, en la ventana de la derecha podrás ir previsualizando cómo quedará tu tarjeta: se pintarán tu nombre y profesión, y se imprimirán los iconos de correo electrónico :envelope:, teléfono :vibration_mode:, LinkedIn y GitHub. Exceptuando el número de teléfono, el resto de campos a rellenar son obligatorios para poder crear la tarjeta.
 
-Además, los comandos:
+Todos estos datos quedarán almacenados en el local storage para que crear nuevas tarjetas sea más rápido incluso. Cada vez que abras el generador de tarjetas, toda tu información personal reaparecerá y solo tendrás que modificar el campo que te interese. Y, si deseas eliminarla, bastará con pulsar el botón 'Reset' para borrar todos los datos de la tarjeta y del local storage.
 
-```bash
-npm run push-docs
-```
-o
+### Comparte :loudspeaker::
 
-```bash
-npm run deploy
-```
-
-son un atajo que nos genera la versión de producción y hace push de la carpeta `docs/` del tirón. Te recomendamos ver el fichero `package.json` para aprender cómo funciona.
-
-## Flujo de archivos con Gulp
-
-Estas tareas de Gulp producen el siguiente flujo de archivos:
-
-![Gulp flow](./gulp-flow.png)
-
-## `gulpfile.js` y `config.json`
-
-Nuestro **gulpfile.js** usa el fichero `config.json` de configuración con las rutas de los archivos a generar / observar.
-
-De esta manera separarmos las acciones que están en `gulpfile.js` de la configuración de las acciones que están en `config.json`.
-
-## Estructura de carpetas
-
-La estructura de carpetas tiene esta pinta:
-
-```
-src
- ├─ api // los ficheros de esta carpeta se copian en public/api/
- |  └─ data.json
- ├─ images
- |  └─ logo.jpg
- ├─ js // los ficheros de esta carpeta se concatenan en el fichero main.js y este se guarda en public/main.js
- |  ├─ main.js
- |  └─ events.js
- ├─ scss
- |  ├─ components
- |  ├─ core
- |  ├─ layout
- |  └─ pages
- └─ html
-    └─ partials
-```
-
-> **NOTA:** Los partials de HTML y SASS del proyecto son orientativos. Te recomendamos usar los que quieras, y borrar los que no uses.
-
-## Vídeotutoriales del Starter kit
-
-- [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
-- [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
-- [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
+¿Ya has rellenado todos tus datos? ¿A qué esperas para compartir? Pincha sobre el botón 'Crear tarjeta', recibe el link de tu tarjeta personalizada y compártela fácilmente y de forma inmediata a través de tu perfil de Twitter. De nada :sunglasses:.
 
 ## Falta algo?
 
-Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo mándanos un PR :)
+¿Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo, mándanos un PR :)
