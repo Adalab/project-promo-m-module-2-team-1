@@ -26,7 +26,7 @@ De forma sencilla e intuitiva, la página de inicio sirve de carta de presentaci
 
 ## Por qué la música:
 
-Hemos querido diferenciarnos de las demás webs dedicadas a la creación de tarjetas aportando un mínimo valor añadido. Como a todas nos apasiona la música, y pensamos que no se puede vivir sin ella, ofrecemos la posibilidad de disfrutar de una buena canción mientras estás creando tu tarjeta. Por ello, al abrir la página para crear tarjetas te encontrarás con una melodía, un tema musical que te aportará entretenimiento mientras trabajas en la creación de tu tarjeta profesional, ¿no es agradable? :musical_note:
+Hemos querido diferenciarnos de las demás webs dedicadas a la creación de tarjetas aportando un mínimo valor añadido. Como a todas nos apasiona la música, y pensamos que no se puede vivir sin ella, ofrecemos la posibilidad de disfrutar de una buena canción mientras estás creando tu tarjeta. Por ello, al clickar en "Comenzar" te sorprenderá una melodía, un tema musical que te aportará entretenimiento mientras trabajas en la creación de tu tarjeta profesional, ¿no es agradable? :musical_note:
 
 ## ¿Por dónde empezar?
 
